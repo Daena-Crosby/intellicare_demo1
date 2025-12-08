@@ -748,6 +748,44 @@ const doctorDatabase = {
             hobbies: "Learning languages, volunteering at swim meets, interacting with children, and maintaining connections with peers from his time in Ukraine."
         },
         transcripts: []
+    },
+    "ramone-williamson": {
+        doctor: {
+            doctor_id: "ramone-williamson",
+            name: "Dr. Ramone A. Williamson",
+            specialty: "Oncology & Orthopedics",
+            country: "Jamaica",
+            medical_role: "Medical Doctor / Orthopedics & Oncology",
+            work_preference: "Both",
+            availability: "Part-time (varies with clinical schedule)",
+            experience_years: 5,
+            photo_url: "/images/ramone-williamson.jpeg"
+        },
+        profile: {
+            bio: "Dr. Ramone A. Williamson is a Jamaican medical doctor specializing in orthopedics and oncology, with five years of clinical experience. His work spans emergency care of orthopedic trauma, cancer-related bone disease, and multidisciplinary oncology management. Known for his calm presence and analytical approach, he provides patient-centered care informed by both hospital experience and academic research.",
+            education: "Bachelor of Medicine and Bachelor of Surgery (MBBS) from The University of the West Indies, Mona. Completed internship and subsequent medical rotations in oncology and orthopedics. Authored over 15 peer-reviewed oncology research publications.",
+            certifications: [
+                "Licensed Medical Doctor, Jamaica",
+                "Specialized clinical experience in Orthopedics",
+                "Oncology research contributor with 15+ academic publications",
+                "Emergency and acute care clinical training"
+            ],
+            languages: [
+                "English"
+            ],
+            personal_story: "Growing up in Jamaica, Dr. Williamson was drawn to medicine as a way to create meaningful impact in communities with limited resources. During his medical training, he gravitated toward oncology because of the depth of human connection involved in caring for cancer patients. His later clinical work in orthopedics broadened his scope, giving him the ability to treat traumatic injuries, fractures, and bone diseases—including cancer-related orthopedic conditions.",
+            academic_journey: "Throughout medical school and clinical training, Dr. Williamson developed a strong interest in oncology research, resulting in more than 15 published papers across cancer care, epidemiology, and treatment outcomes. His work straddles both oncology and orthopedics, giving him a unique dual perspective on patient care, especially for individuals whose orthopedic issues stem from or overlap with cancer diagnoses.",
+            professional_experience: "With five years of clinical experience, Dr. Williamson has served in hospital settings managing acute orthopedic trauma, fractures, emergency cases, and soft tissue injuries. He also works with oncology patients, supporting diagnosis, clinical management, and follow-up care. His blended expertise allows him to provide holistic guidance to patients with complex musculoskeletal conditions, including those impacted by cancer.",
+            memorable_case: "Dr. Williamson recalls multiple cases involving patients with advanced cancer who developed severe orthopedic complications. Providing relief, triage, and compassionate counseling for families during these difficult situations has shaped his understanding of dignity in care and the emotional weight of patient support.",
+            strengths: "Strong foundation in oncology research and clinical oncology support. Skilled in orthopedic trauma assessment, fracture management, and musculoskeletal diagnostics. Excellent communicator, calm under pressure, and capable of providing empathetic guidance to patients and families.",
+            areas_for_growth: "Continuing to develop procedural orthopedics skills and expanding capabilities in telemedicine for remote patient monitoring. Seeking opportunities to participate in global orthopedic-oncology partnerships and further research collaborations.",
+            personality: "Calm, analytical, compassionate, and deeply patient-focused. Balances scientific rigor with emotional sensitivity, particularly in oncology care. Values teamwork, humility, and continuous learning.",
+            core_values: "Patient dignity, evidence-based medicine, compassionate communication, lifelong learning, family-centered care, and service to underserved communities.",
+            values: "Grounded in the belief that every patient deserves to be seen, heard, and supported throughout the entire healing process—physically, emotionally, and socially.",
+            goals: "To deepen expertise in orthopedic surgery and oncology. To expand clinical reach through telemedicine. To continue publishing research that improves cancer outcomes. To serve in relief missions and support communities facing medical crises.",
+            hobbies: "Reading, academic research, mentorship, fitness, and volunteering in community health initiatives."
+        },
+        transcripts: []
     }
 };
 }),
@@ -772,7 +810,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$heart$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Heart$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/heart.js [app-rsc] (ecmascript) <export default as Heart>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-rsc] (ecmascript) <export default as User>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/briefcase.js [app-rsc] (ecmascript) <export default as Briefcase>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-rsc] (ecmascript) <export default as Sparkles>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/book-open.js [app-rsc] (ecmascript) <export default as BookOpen>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Shield$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/shield.js [app-rsc] (ecmascript) <export default as Shield>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/zap.js [app-rsc] (ecmascript) <export default as Zap>");
@@ -971,7 +1008,7 @@ async function DoctorDetailPage({ params }) {
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
                                                             lineNumber: 144,
-                                                            columnNumber: 21
+                                                            columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                             className: "space-y-3 text-sm",
@@ -984,7 +1021,7 @@ async function DoctorDetailPage({ params }) {
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                             lineNumber: 149,
-                                                                            columnNumber: 25
+                                                                            columnNumber: 23
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                             children: [
@@ -994,7 +1031,7 @@ async function DoctorDetailPage({ params }) {
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                                     lineNumber: 151,
-                                                                                    columnNumber: 27
+                                                                                    columnNumber: 25
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "text-slate-200",
@@ -1005,19 +1042,19 @@ async function DoctorDetailPage({ params }) {
                                                                                 }, void 0, true, {
                                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                                     lineNumber: 152,
-                                                                                    columnNumber: 27
+                                                                                    columnNumber: 25
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                             lineNumber: 150,
-                                                                            columnNumber: 25
+                                                                            columnNumber: 23
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                     lineNumber: 148,
-                                                                    columnNumber: 23
+                                                                    columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "flex items-start gap-3",
@@ -1027,7 +1064,7 @@ async function DoctorDetailPage({ params }) {
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                             lineNumber: 158,
-                                                                            columnNumber: 25
+                                                                            columnNumber: 23
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                             children: [
@@ -1037,7 +1074,7 @@ async function DoctorDetailPage({ params }) {
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                                     lineNumber: 160,
-                                                                                    columnNumber: 27
+                                                                                    columnNumber: 25
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "text-slate-200",
@@ -1045,19 +1082,19 @@ async function DoctorDetailPage({ params }) {
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                                     lineNumber: 161,
-                                                                                    columnNumber: 27
+                                                                                    columnNumber: 25
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                             lineNumber: 159,
-                                                                            columnNumber: 25
+                                                                            columnNumber: 23
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                     lineNumber: 157,
-                                                                    columnNumber: 23
+                                                                    columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "flex items-start gap-3",
@@ -1067,7 +1104,7 @@ async function DoctorDetailPage({ params }) {
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                             lineNumber: 165,
-                                                                            columnNumber: 25
+                                                                            columnNumber: 23
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                             children: [
@@ -1077,7 +1114,7 @@ async function DoctorDetailPage({ params }) {
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                                     lineNumber: 167,
-                                                                                    columnNumber: 27
+                                                                                    columnNumber: 25
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "text-slate-200",
@@ -1085,19 +1122,19 @@ async function DoctorDetailPage({ params }) {
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                                     lineNumber: 168,
-                                                                                    columnNumber: 27
+                                                                                    columnNumber: 25
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                             lineNumber: 166,
-                                                                            columnNumber: 25
+                                                                            columnNumber: 23
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                     lineNumber: 164,
-                                                                    columnNumber: 23
+                                                                    columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                     className: "flex items-start gap-3",
@@ -1107,7 +1144,7 @@ async function DoctorDetailPage({ params }) {
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                             lineNumber: 174,
-                                                                            columnNumber: 25
+                                                                            columnNumber: 23
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                             children: [
@@ -1117,7 +1154,7 @@ async function DoctorDetailPage({ params }) {
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                                     lineNumber: 176,
-                                                                                    columnNumber: 27
+                                                                                    columnNumber: 25
                                                                                 }, this),
                                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                     className: "text-slate-200",
@@ -1125,31 +1162,31 @@ async function DoctorDetailPage({ params }) {
                                                                                 }, void 0, false, {
                                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                                     lineNumber: 177,
-                                                                                    columnNumber: 27
+                                                                                    columnNumber: 25
                                                                                 }, this)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                             lineNumber: 175,
-                                                                            columnNumber: 25
+                                                                            columnNumber: 23
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                                     lineNumber: 173,
-                                                                    columnNumber: 23
+                                                                    columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
                                                             lineNumber: 147,
-                                                            columnNumber: 21
+                                                            columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
                                                     lineNumber: 143,
-                                                    columnNumber: 19
+                                                    columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -1174,14 +1211,14 @@ async function DoctorDetailPage({ params }) {
                                                             className: "h-5 w-5 text-blue-200"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 192,
+                                                            lineNumber: 194,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Core Values"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 191,
+                                                    lineNumber: 193,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1189,59 +1226,18 @@ async function DoctorDetailPage({ params }) {
                                                     children: profile.core_values
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 195,
+                                                    lineNumber: 197,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                            lineNumber: 190,
+                                            lineNumber: 192,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 189,
-                                        columnNumber: 15
-                                    }, this),
-                                    profile?.professional_experience && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
-                                        className: "border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
-                                            className: "p-6",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                    className: "mb-4 flex items-center gap-2 text-2xl font-bold text-white",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"], {
-                                                            className: "h-6 w-6 text-blue-200"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 207,
-                                                            columnNumber: 21
-                                                        }, this),
-                                                        "Professional Journey"
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 206,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-pretty text-base leading-relaxed text-slate-300",
-                                                    children: profile.professional_experience
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 210,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                            lineNumber: 205,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 204,
+                                        lineNumber: 191,
                                         columnNumber: 15
                                     }, this),
                                     profile?.personality && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
@@ -1256,14 +1252,14 @@ async function DoctorDetailPage({ params }) {
                                                             className: "h-5 w-5 text-blue-200"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 222,
+                                                            lineNumber: 209,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Personality"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 221,
+                                                    lineNumber: 208,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1271,18 +1267,18 @@ async function DoctorDetailPage({ params }) {
                                                     children: profile.personality
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 225,
+                                                    lineNumber: 212,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                            lineNumber: 220,
+                                            lineNumber: 207,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 219,
+                                        lineNumber: 206,
                                         columnNumber: 15
                                     }, this),
                                     profile?.hobbies && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
@@ -1297,14 +1293,14 @@ async function DoctorDetailPage({ params }) {
                                                             className: "h-6 w-6 text-blue-200"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 237,
+                                                            lineNumber: 224,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Hobbies & Interests"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 236,
+                                                    lineNumber: 223,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1312,18 +1308,18 @@ async function DoctorDetailPage({ params }) {
                                                     children: profile.hobbies
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 240,
+                                                    lineNumber: 227,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                            lineNumber: 235,
+                                            lineNumber: 222,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 234,
+                                        lineNumber: 221,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1347,14 +1343,14 @@ async function DoctorDetailPage({ params }) {
                                                             className: "h-6 w-6 text-blue-200"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 254,
+                                                            lineNumber: 241,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Bio"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 253,
+                                                    lineNumber: 240,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1362,439 +1358,107 @@ async function DoctorDetailPage({ params }) {
                                                     children: profile.bio
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 257,
+                                                    lineNumber: 244,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                            lineNumber: 252,
+                                            lineNumber: 239,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 251,
+                                        lineNumber: 238,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "grid gap-6 ",
-                                        children: profile?.goals && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
-                                            className: "border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur lg:col-span-2",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
-                                                className: "p-6",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                        className: "mb-4 flex items-center gap-2 text-2xl font-bold text-white",
-                                                        children: [
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"], {
-                                                                className: "h-6 w-6 text-blue-200"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                lineNumber: 269,
-                                                                columnNumber: 23
-                                                            }, this),
-                                                            "Goals"
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                        lineNumber: 268,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                                        className: "space-y-2 text-sm text-slate-300",
-                                                        children: profile.goals.split(".").filter(Boolean).map((goal, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                                className: "flex items-start gap-2",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-white"
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                        lineNumber: 278,
-                                                                        columnNumber: 29
-                                                                    }, this),
-                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                        className: "text-pretty",
-                                                                        children: [
-                                                                            goal.trim(),
-                                                                            "."
-                                                                        ]
-                                                                    }, void 0, true, {
-                                                                        fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                        lineNumber: 279,
-                                                                        columnNumber: 29
-                                                                    }, this)
-                                                                ]
-                                                            }, idx, true, {
-                                                                fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                lineNumber: 277,
-                                                                columnNumber: 27
-                                                            }, this))
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                        lineNumber: 272,
-                                                        columnNumber: 21
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                lineNumber: 267,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                            lineNumber: 266,
-                                            columnNumber: 17
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 264,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "grid gap-6 ",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
-                                                className: "border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur",
+                                        children: profile?.goals && (()=>{
+                                            const goals = profile.goals.split(".").filter(Boolean).map((g)=>g.trim());
+                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
+                                                className: "border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur lg:col-span-2",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
                                                     className: "p-6",
                                                     children: [
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                            className: "mb-4 flex items-center gap-2 text-xl font-bold text-white",
+                                                            className: "mb-4 flex items-center gap-2 text-2xl font-bold text-white",
                                                             children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                                                    className: "h-5 w-5 text-blue-200"
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"], {
+                                                                    className: "h-6 w-6 text-blue-200"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                    lineNumber: 293,
-                                                                    columnNumber: 21
+                                                                    lineNumber: 263,
+                                                                    columnNumber: 27
                                                                 }, this),
-                                                                "Motivations"
+                                                                "Goals"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 292,
-                                                            columnNumber: 19
+                                                            lineNumber: 262,
+                                                            columnNumber: 25
                                                         }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "space-y-3",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1.5",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center justify-between text-xs",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "text-white",
-                                                                                    children: "Patient Care"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                    lineNumber: 299,
-                                                                                    columnNumber: 25
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "font-medium text-white",
-                                                                                    children: "10/10"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                    lineNumber: 300,
-                                                                                    columnNumber: 25
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                            lineNumber: 298,
-                                                                            columnNumber: 23
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "h-1.5 w-full overflow-hidden rounded-full bg-muted",
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "h-full rounded-full bg-primary transition-all duration-300",
-                                                                                style: {
-                                                                                    width: "100%"
-                                                                                }
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                lineNumber: 303,
-                                                                                columnNumber: 25
-                                                                            }, this)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                            lineNumber: 302,
-                                                                            columnNumber: 23
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                    lineNumber: 297,
-                                                                    columnNumber: 21
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1.5",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center justify-between text-xs",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "text-white",
-                                                                                    children: "Global Health"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                    lineNumber: 311,
-                                                                                    columnNumber: 25
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "font-medium text-white",
-                                                                                    children: "9/10"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                    lineNumber: 312,
-                                                                                    columnNumber: 25
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                            lineNumber: 310,
-                                                                            columnNumber: 23
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "h-1.5 w-full overflow-hidden rounded-full bg-muted",
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "h-full rounded-full bg-primary transition-all duration-300",
-                                                                                style: {
-                                                                                    width: "90%"
-                                                                                }
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                lineNumber: 315,
-                                                                                columnNumber: 25
-                                                                            }, this)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                            lineNumber: 314,
-                                                                            columnNumber: 23
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                    lineNumber: 309,
-                                                                    columnNumber: 21
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1.5",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center justify-between text-xs",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "text-white",
-                                                                                    children: "Longevity"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                    lineNumber: 323,
-                                                                                    columnNumber: 25
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "font-medium text-white",
-                                                                                    children: "9/10"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                    lineNumber: 324,
-                                                                                    columnNumber: 25
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                            lineNumber: 322,
-                                                                            columnNumber: 23
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "h-1.5 w-full overflow-hidden rounded-full bg-muted",
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "h-full rounded-full bg-primary transition-all duration-300",
-                                                                                style: {
-                                                                                    width: "90%"
-                                                                                }
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                lineNumber: 327,
-                                                                                columnNumber: 25
-                                                                            }, this)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                            lineNumber: 326,
-                                                                            columnNumber: 23
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                    lineNumber: 321,
-                                                                    columnNumber: 21
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1.5",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center justify-between text-xs",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "text-white",
-                                                                                    children: "Preventative"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                    lineNumber: 335,
-                                                                                    columnNumber: 25
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "font-medium text-white",
-                                                                                    children: "10/10"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                    lineNumber: 336,
-                                                                                    columnNumber: 25
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                            lineNumber: 334,
-                                                                            columnNumber: 23
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "h-1.5 w-full overflow-hidden rounded-full bg-muted",
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "h-full rounded-full bg-primary transition-all duration-300",
-                                                                                style: {
-                                                                                    width: "100%"
-                                                                                }
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                lineNumber: 339,
-                                                                                columnNumber: 25
-                                                                            }, this)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                            lineNumber: 338,
-                                                                            columnNumber: 23
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                    lineNumber: 333,
-                                                                    columnNumber: 21
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "space-y-1.5",
-                                                                    children: [
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "flex items-center justify-between text-xs",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "text-white",
-                                                                                    children: "Balance"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                    lineNumber: 347,
-                                                                                    columnNumber: 25
-                                                                                }, this),
-                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                    className: "font-medium text-white",
-                                                                                    children: "8/10"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                    lineNumber: 348,
-                                                                                    columnNumber: 25
-                                                                                }, this)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                            lineNumber: 346,
-                                                                            columnNumber: 23
-                                                                        }, this),
-                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                            className: "h-1.5 w-full overflow-hidden rounded-full bg-muted",
-                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "h-full rounded-full bg-primary transition-all duration-300",
-                                                                                style: {
-                                                                                    width: "80%"
-                                                                                }
-                                                                            }, void 0, false, {
-                                                                                fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                                lineNumber: 351,
-                                                                                columnNumber: 25
-                                                                            }, this)
-                                                                        }, void 0, false, {
-                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                            lineNumber: 350,
-                                                                            columnNumber: 23
-                                                                        }, this)
-                                                                    ]
-                                                                }, void 0, true, {
-                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                    lineNumber: 345,
-                                                                    columnNumber: 21
-                                                                }, this)
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 296,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 291,
-                                                    columnNumber: 17
-                                                }, this)
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                lineNumber: 290,
-                                                columnNumber: 15
-                                            }, this),
-                                            profile?.strengths && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
-                                                className: "border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur",
-                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
-                                                    className: "p-6",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                                            className: "mb-4 flex items-center gap-2 text-xl font-bold text-white",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__["Award"], {
-                                                                    className: "h-5 w-5 text-blue-200"
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                    lineNumber: 365,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                "Strengths"
-                                                            ]
-                                                        }, void 0, true, {
-                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 364,
-                                                            columnNumber: 21
-                                                        }, this),
+                                                        goals.length === 1 ? // ✅ One Goal → No bullet
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-pretty text-sm leading-relaxed text-slate-300",
-                                                            children: profile.strengths
+                                                            className: "text-sm text-slate-300 text-pretty",
+                                                            children: [
+                                                                goals[0],
+                                                                "."
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
+                                                            lineNumber: 269,
+                                                            columnNumber: 27
+                                                        }, this) : // ✅ Multiple Goals → Bulleted list
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                            className: "space-y-2 text-sm text-slate-300",
+                                                            children: goals.map((goal, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                                    className: "flex items-start gap-2",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-white"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
+                                                                            lineNumber: 277,
+                                                                            columnNumber: 33
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                            className: "text-pretty",
+                                                                            children: [
+                                                                                goal,
+                                                                                "."
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
+                                                                            lineNumber: 278,
+                                                                            columnNumber: 33
+                                                                        }, this)
+                                                                    ]
+                                                                }, idx, true, {
+                                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
+                                                                    lineNumber: 276,
+                                                                    columnNumber: 31
+                                                                }, this))
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 368,
-                                                            columnNumber: 21
+                                                            lineNumber: 274,
+                                                            columnNumber: 27
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 363,
-                                                    columnNumber: 19
+                                                    lineNumber: 261,
+                                                    columnNumber: 23
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                lineNumber: 362,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
+                                                lineNumber: 260,
+                                                columnNumber: 21
+                                            }, this);
+                                        })()
+                                    }, void 0, false, {
                                         fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 289,
+                                        lineNumber: 251,
                                         columnNumber: 13
                                     }, this),
                                     profile?.education && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
@@ -1809,14 +1473,14 @@ async function DoctorDetailPage({ params }) {
                                                             className: "h-6 w-6 text-blue-200"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 380,
+                                                            lineNumber: 381,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Education"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 379,
+                                                    lineNumber: 380,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1828,7 +1492,7 @@ async function DoctorDetailPage({ params }) {
                                                                     className: "mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-white"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                    lineNumber: 389,
+                                                                    lineNumber: 390,
                                                                     columnNumber: 27
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1839,36 +1503,77 @@ async function DoctorDetailPage({ params }) {
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                                    lineNumber: 390,
+                                                                    lineNumber: 391,
                                                                     columnNumber: 27
                                                                 }, this)
                                                             ]
                                                         }, idx, true, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 388,
+                                                            lineNumber: 389,
                                                             columnNumber: 25
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 383,
+                                                    lineNumber: 384,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                            lineNumber: 378,
+                                            lineNumber: 379,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 377,
+                                        lineNumber: 378,
+                                        columnNumber: 15
+                                    }, this),
+                                    profile?.professional_experience && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
+                                        className: "border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["CardContent"], {
+                                            className: "p-6",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                    className: "mb-4 flex items-center gap-2 text-2xl font-bold text-white",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$briefcase$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Briefcase$3e$__["Briefcase"], {
+                                                            className: "h-6 w-6 text-blue-200"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/doctors/[id]/page.tsx",
+                                                            lineNumber: 406,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        "Professional Journey"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
+                                                    lineNumber: 405,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-pretty text-base leading-relaxed text-slate-300",
+                                                    children: profile.professional_experience
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/doctors/[id]/page.tsx",
+                                                    lineNumber: 409,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/app/doctors/[id]/page.tsx",
+                                            lineNumber: 404,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/doctors/[id]/page.tsx",
+                                        lineNumber: 403,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex w-full gap-4 lg:grid-cols-3"
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 401,
+                                        lineNumber: 417,
                                         columnNumber: 13
                                     }, this),
                                     profile?.personal_story && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
@@ -1883,14 +1588,14 @@ async function DoctorDetailPage({ params }) {
                                                             className: "h-6 w-6 text-blue-200"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 467,
+                                                            lineNumber: 483,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Personal Story"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 466,
+                                                    lineNumber: 482,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1898,18 +1603,18 @@ async function DoctorDetailPage({ params }) {
                                                     children: profile.personal_story
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 470,
+                                                    lineNumber: 486,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                            lineNumber: 465,
+                                            lineNumber: 481,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 464,
+                                        lineNumber: 480,
                                         columnNumber: 15
                                     }, this),
                                     profile?.memorable_case && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Card"], {
@@ -1924,14 +1629,14 @@ async function DoctorDetailPage({ params }) {
                                                             className: "h-6 w-6 text-blue-200"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                            lineNumber: 482,
+                                                            lineNumber: 498,
                                                             columnNumber: 21
                                                         }, this),
                                                         "Memorable Experience"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 481,
+                                                    lineNumber: 497,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1939,24 +1644,24 @@ async function DoctorDetailPage({ params }) {
                                                     children: profile.memorable_case
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/doctors/[id]/page.tsx",
-                                                    lineNumber: 485,
+                                                    lineNumber: 501,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/doctors/[id]/page.tsx",
-                                            lineNumber: 480,
+                                            lineNumber: 496,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/doctors/[id]/page.tsx",
-                                        lineNumber: 479,
+                                        lineNumber: 495,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/doctors/[id]/page.tsx",
-                                lineNumber: 249,
+                                lineNumber: 236,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1973,7 +1678,7 @@ async function DoctorDetailPage({ params }) {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/doctors/[id]/page.tsx",
-                lineNumber: 494,
+                lineNumber: 510,
                 columnNumber: 7
             }, this)
         ]

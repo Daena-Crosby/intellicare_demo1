@@ -1026,6 +1026,44 @@ const doctorDatabase = {
             hobbies: "Learning languages, volunteering at swim meets, interacting with children, and maintaining connections with peers from his time in Ukraine."
         },
         transcripts: []
+    },
+    "ramone-williamson": {
+        doctor: {
+            doctor_id: "ramone-williamson",
+            name: "Dr. Ramone A. Williamson",
+            specialty: "Oncology & Orthopedics",
+            country: "Jamaica",
+            medical_role: "Medical Doctor / Orthopedics & Oncology",
+            work_preference: "Both",
+            availability: "Part-time (varies with clinical schedule)",
+            experience_years: 5,
+            photo_url: "/images/ramone-williamson.jpeg"
+        },
+        profile: {
+            bio: "Dr. Ramone A. Williamson is a Jamaican medical doctor specializing in orthopedics and oncology, with five years of clinical experience. His work spans emergency care of orthopedic trauma, cancer-related bone disease, and multidisciplinary oncology management. Known for his calm presence and analytical approach, he provides patient-centered care informed by both hospital experience and academic research.",
+            education: "Bachelor of Medicine and Bachelor of Surgery (MBBS) from The University of the West Indies, Mona. Completed internship and subsequent medical rotations in oncology and orthopedics. Authored over 15 peer-reviewed oncology research publications.",
+            certifications: [
+                "Licensed Medical Doctor, Jamaica",
+                "Specialized clinical experience in Orthopedics",
+                "Oncology research contributor with 15+ academic publications",
+                "Emergency and acute care clinical training"
+            ],
+            languages: [
+                "English"
+            ],
+            personal_story: "Growing up in Jamaica, Dr. Williamson was drawn to medicine as a way to create meaningful impact in communities with limited resources. During his medical training, he gravitated toward oncology because of the depth of human connection involved in caring for cancer patients. His later clinical work in orthopedics broadened his scope, giving him the ability to treat traumatic injuries, fractures, and bone diseases—including cancer-related orthopedic conditions.",
+            academic_journey: "Throughout medical school and clinical training, Dr. Williamson developed a strong interest in oncology research, resulting in more than 15 published papers across cancer care, epidemiology, and treatment outcomes. His work straddles both oncology and orthopedics, giving him a unique dual perspective on patient care, especially for individuals whose orthopedic issues stem from or overlap with cancer diagnoses.",
+            professional_experience: "With five years of clinical experience, Dr. Williamson has served in hospital settings managing acute orthopedic trauma, fractures, emergency cases, and soft tissue injuries. He also works with oncology patients, supporting diagnosis, clinical management, and follow-up care. His blended expertise allows him to provide holistic guidance to patients with complex musculoskeletal conditions, including those impacted by cancer.",
+            memorable_case: "Dr. Williamson recalls multiple cases involving patients with advanced cancer who developed severe orthopedic complications. Providing relief, triage, and compassionate counseling for families during these difficult situations has shaped his understanding of dignity in care and the emotional weight of patient support.",
+            strengths: "Strong foundation in oncology research and clinical oncology support. Skilled in orthopedic trauma assessment, fracture management, and musculoskeletal diagnostics. Excellent communicator, calm under pressure, and capable of providing empathetic guidance to patients and families.",
+            areas_for_growth: "Continuing to develop procedural orthopedics skills and expanding capabilities in telemedicine for remote patient monitoring. Seeking opportunities to participate in global orthopedic-oncology partnerships and further research collaborations.",
+            personality: "Calm, analytical, compassionate, and deeply patient-focused. Balances scientific rigor with emotional sensitivity, particularly in oncology care. Values teamwork, humility, and continuous learning.",
+            core_values: "Patient dignity, evidence-based medicine, compassionate communication, lifelong learning, family-centered care, and service to underserved communities.",
+            values: "Grounded in the belief that every patient deserves to be seen, heard, and supported throughout the entire healing process—physically, emotionally, and socially.",
+            goals: "To deepen expertise in orthopedic surgery and oncology. To expand clinical reach through telemedicine. To continue publishing research that improves cancer outcomes. To serve in relief missions and support communities facing medical crises.",
+            hobbies: "Reading, academic research, mentorship, fitness, and volunteering in community health initiatives."
+        },
+        transcripts: []
     }
 };
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
