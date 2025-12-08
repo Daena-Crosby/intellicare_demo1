@@ -442,6 +442,70 @@ export const doctorDatabase = {
   transcripts: [],
 },
 
+"hajauni-parsons": {
+  doctor: {
+    doctor_id: "hajauni-parsons",
+    name: "Dr. Hajauni Parsons",
+    specialty: "General Medicine",
+    country: "Jamaica",
+    medical_role: "Medical Doctor",
+    work_preference: "Both",
+    availability: "Not specified",
+    experience_years: 2,
+    photo_url: "/images/hajauni-parsons.jpeg",
+  },
+
+  profile: {
+    bio: "Dr. Hajauni Parsons is a Jamaican medical doctor with experience in both hospital and community clinical settings. Currently working at Spanish Town Hospital, he manages a wide range of general medical cases with a hands-on, practical approach to patient care. He is deeply motivated by service, skill development, and the opportunity to grow into a more specialized clinical role in the future.",
+
+    education:
+      "Bachelor of Medicine, Bachelor of Surgery (MBBS), followed by two years of practical clinical experience across various hospital departments.",
+
+    certifications: [
+      "Medical Doctor (Registered)",
+      "Clinical experience across General Medicine and Emergency rotations",
+      "Procedural skills development within hospital settings"
+    ],
+
+    languages: ["English"],
+
+    personal_story:
+      "Growing up in Jamaica, Dr. Parsons built a strong desire to serve his community and advance his medical skills. He thrives in hands-on environments and values being part of a team that provides immediate and meaningful impact. His dedication to patient care comes from a desire to support others during moments of crisis and uncertainty, especially in underserved communities.",
+
+    academic_journey:
+      "After graduating from medical school, Dr. Parsons entered clinical practice and has since worked for two years in general hospital settings. He has gained early exposure to emergency care, general medicine, and procedural work, and continues to build his clinical judgment and hands-on skill set. His long-term aspiration is to pursue advanced training in surgery, particularly general surgery with potential interest in cardiothoracic care.",
+
+    professional_experience:
+      "Currently serving at Spanish Town Hospital, Dr. Parsons manages general medical patients, coordinates care with multidisciplinary teams, and assists with procedural and emergency tasks. His work emphasizes adaptability, critical thinking, and the ability to stabilize, assess, and manage a wide range of conditions in a resource-constrained environment.",
+
+    memorable_case:
+      "One of his most meaningful clinical moments was supporting patients and families during emotionally difficult circumstances. These experiences strengthened his desire to provide compassionate, grounded, skillful care while maintaining a calm presence in challenging situations.",
+
+    strengths:
+      "Strong clinical adaptability, growing procedural competence, willingness to take initiative, clear communication, team-oriented mindset, and a natural ability to stay calm under pressure. He is committed to learning and motivated to improve his skill set continuously.",
+
+    areas_for_growth:
+      "Further development of surgical proficiency, increased exposure to advanced medical procedures, and strengthening his clinical decision-making through mentorship and specialty training.",
+
+    personality:
+      "Calm, thoughtful, hands-on, and service-oriented. Dr. Parsons is motivated by purpose, teamwork, and growth. He values honesty, reliability, and consistency in both personal and professional environments.",
+
+    core_values:
+      "Service, discipline, continuous improvement, compassion, teamwork, and dedication to community impact.",
+
+    values:
+      "He believes deeply in helping others through direct action and sees medicine as both a responsibility and an opportunity to uplift vulnerable communities.",
+
+    goals:
+      "To continue building clinical experience. To pursue advanced surgical training in the future. To contribute to Jamaica’s healthcare system and expand his practical skill set.",
+
+    hobbies:
+      "Working out, learning new procedures, spending time with friends, exploring new interests, and maintaining a balanced lifestyle.",
+  },
+
+  transcripts: [],
+},
+
 
 
 }
