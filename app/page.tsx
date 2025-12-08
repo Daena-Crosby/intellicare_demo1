@@ -248,10 +248,10 @@ export default function Home() {
           </div>
 
           <div className="max-w-5xl mx-auto text-center relative z-40">
-            <h1 className="text-5xl font-bold text-primary-foreground mb-6">
+            <h1 className="text-5xl font-bold text-primary-foreground mb-6 sm:text-start md:text-center">
               Care. Relief. Revitalization
             </h1>
-            <h1 className="text-5xl font-bold text-primary-foreground mb-6">
+            <h1 className="text-3xl font-bold text-primary-foreground mb-6 md:text-5xl">
               -Beginning with Jamaica.
             </h1>
             <p className="text-xl text-primary-foreground/90 mb-4 text-balance leading-relaxed">
@@ -288,7 +288,7 @@ export default function Home() {
         <section className="py-16 px-4 bg-white border-t-4 border-primary">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-10">
-              <h2 className="text-4xl font-bold mb-4 text-foreground">
+              <h2 className="text-4xl  font-bold mb-4 text-foreground">
                 Current Focus: Jamaica Relief
               </h2>
               <p className="text-lg leading-relaxed text-gray-700 mb-0">
@@ -325,21 +325,21 @@ export default function Home() {
               </div>
               <div className="relative group">
                 <div className="absolute inset-0 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
-                <div className="relative w-48 h-48 mx-auto bg-white rounded-full p-2 shadow-lg">
+                <div className="relative w-48 h-48 mx-auto bg-white rounded-full p-2 shadow-lg sm:flex hidden">
                   <img
                     src="/images/hurricane-relief-3.jpeg"
                     alt="Relief worker coordinating nighttime operations"
-                    className="w-full h-full rounded-full object-cover"
+                    className="w-full h-full rounded-full object-cover "
                   />
                 </div>
               </div>
               <div className="relative group">
                 <div className="absolute inset-0 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
-                <div className="relative w-48 h-48 mx-auto bg-white rounded-full p-2 shadow-lg">
+                <div className="relative w-48 h-48 mx-auto bg-white rounded-full p-2 shadow-lg sm:flex hidden">
                   <img
                     src="/telemedicine-1.png"
                     alt="Telemedicine consultation with patient"
-                    className="w-full h-full rounded-full object-cover"
+                    className="w-full h-full rounded-full object-cover sm:flex hidden"
                   />
                 </div>
               </div>
@@ -456,63 +456,66 @@ export default function Home() {
               times of crisis and community need.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer">
-                <a href="/missions?id=hurricane-relief-2024">
-                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                    <img
-                      src="/care-relief-collage-2.png"
-                      alt="Hurricane relief field work"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                    />
-                  </div>
-                  <h3 className="font-semibold mb-2">Hurricane Relief 2024</h3>
-                  <p className="text-sm text-foreground/70">
-                    Coordinated medical, psycho-social, and logistical support
-                    for communities heavily impacted by severe storms, working
-                    alongside local health centers and relief agencies.
-                  </p>
-                </a>
-              </Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full">
+  {/* Card 1 */}
+  <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer w-full">
+    <a href="https://www.intellibus.care/missions/melissa-recovery">
+      <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <img
+          src="/field-care.jpg"
+          alt="Hurricane relief field work"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+        />
+      </div>
+      <h3 className="font-semibold mb-2">Melissa Recovery Across Jamaica</h3>
+      <h4 className="font-light text-[14px] mb-2">Supporting communities across parishes</h4>
+      <p className="text-sm text-foreground/70 flex gap-2">
+        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+        Mapping medical needs across parishes
+      </p>
+      <p className="text-sm text-foreground/70 flex gap-2"> 
+        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+        Deploying Starlink-powered telehealth terminals
+      </p>
+      <p className="text-sm text-foreground/70 flex gap-2">
+        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+        Distributing diagnostic kits for leptospirosis and cholera
+      </p>
+      <p className="text-sm text-foreground/70 flex gap-2">
+        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+        Coordinating with ODPEM, MLSS, and community partners
+      </p>
+    </a>
+  </Card>
 
-              <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer">
-                <a href="/missions?id=community-health-outreach">
-                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                    <img
-                      src="/care-relief-collage-3.jpg"
-                      alt="Medical consultation in field"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                    />
-                  </div>
-                  <h3 className="font-semibold mb-2">
-                    Community Health Outreach
-                  </h3>
-                  <p className="text-sm text-foreground/70">
-                    Mobile outreach to underserved communities, focusing on
-                    preventative care, health education, and early
-                    identification of at-risk individuals and families.
-                  </p>
-                </a>
-              </Card>
+  {/* Card 2 - Updated */}
+  <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer w-full">
+    <a href="https://www.intellibus.care/missions/bluefields-mernsville">
+      <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+        <img
+          src="/team-meeting.jpg"
+          alt="Bluefields & Mernsville telemedicine and relief"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+        />
+      </div>
+      <h3 className="font-semibold mb-2">Bluefields & Mernsville</h3>
+      <h4 className="font-light text-[14px] mb-2">Restoring care access after Hurricane Melissa</h4>
+      <p className="text-sm text-foreground/70 flex gap-2">
+        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+        Building telemedicine nodes, diagnostic clinics, and community pods
+      </p>
+      <p className="text-sm text-foreground/70 flex gap-2">
+        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+        Running medical missions with JDF, BDF, UWI, and international doctors
+      </p>
+      <p className="text-sm text-foreground/70 flex gap-2">
+        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+        Supporting small businesses and youth talent programs
+      </p>
+    </a>
+  </Card>
+</div>
 
-              <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer">
-                <a href="/missions?id=disaster-coordination">
-                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-                    <img
-                      src="/team-meeting.png"
-                      alt="Relief workers coordinating"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                    />
-                  </div>
-                  <h3 className="font-semibold mb-2">Disaster Coordination</h3>
-                  <p className="text-sm text-foreground/70">
-                    Joint planning and rapid response with local authorities,
-                    shelters, and NGOs to align medical resources, volunteers,
-                    and information flows during emergencies.
-                  </p>
-                </a>
-              </Card>
-            </div>
 
             <p className="text-center text-muted-foreground mt-8 italic">
               More mission details and impact stories coming soon.
