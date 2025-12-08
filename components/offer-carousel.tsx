@@ -43,59 +43,69 @@ interface OfferCardProps {
  * Individual card within the carousel showing doctor information.
  * Includes hover animation that lifts the card up slightly.
  */
-const OfferCard = React.forwardRef<HTMLAnchorElement, OfferCardProps>(({ offer }, ref) => (
-  <motion.a
-    ref={ref}
-    href={offer.href}
-    className="relative flex-shrink-0 w-[300px] h-[380px] rounded-2xl overflow-hidden group snap-start"
-    // Hover animation: lift card up by 8px
-    whileHover={{ y: -8 }}
-    transition={{ type: "spring", stiffness: 300, damping: 20 }}
-    style={{ perspective: "1000px" }}
-  >
-    {/* Top half: Doctor Photo */}
-    <img
-      src={offer.imageSrc || "/placeholder.svg"}
-      alt={offer.imageAlt}
-      className="absolute inset-0 w-full h-2/4 object-cover transition-transform duration-500 group-hover:scale-110"
-    />
+const OfferCard = React.forwardRef<HTMLAnchorElement, OfferCardProps>(
+  ({ offer }, ref) => (
+    <motion.a
+      ref={ref}
+      href={offer.href}
+      className="relative flex-shrink-0 w-[300px] h-[380px] rounded-2xl overflow-hidden group snap-start"
+      // Hover animation: lift card up by 8px
+      whileHover={{ y: -8 }}
+      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      style={{ perspective: "1000px" }}
+    >
+      {/* Top half: Doctor Photo */}
+      <img
+        src={offer.imageSrc || "/placeholder.svg"}
+        alt={offer.imageAlt}
+        className="absolute inset-0 w-full h-2/4 object-top object-cover transition-transform duration-500 group-hover:scale-110"
+      />
 
-    {/* Bottom half: Card Content */}
-    <div className="absolute bottom-0 left-0 right-0 h-2/4 bg-card p-5 flex flex-col justify-between">
-      <div className="space-y-2">
-        {/* Tag (Work Preference) */}
-        <div className="flex items-center text-xs text-muted-foreground">
-          <Tag className="w-4 h-4 mr-2 text-primary" />
-          <span>{offer.tag}</span>
+      {/* Bottom half: Card Content */}
+      <div className="absolute bottom-0 left-0 right-0 h-2/4 bg-card p-5 flex flex-col justify-between">
+        <div className="space-y-2">
+          {/* Tag (Work Preference) */}
+          <div className="flex items-center text-xs text-muted-foreground">
+            <Tag className="w-4 h-4 mr-2 text-primary" />
+            <span>{offer.tag}</span>
+          </div>
+
+          {/* Doctor Name & Description */}
+          <h3 className="text-xl font-bold text-card-foreground leading-tight">
+            {offer.title}
+          </h3>
+          <p className="text-sm text-muted-foreground">{offer.description}</p>
         </div>
 
-        {/* Doctor Name & Description */}
-        <h3 className="text-xl font-bold text-card-foreground leading-tight">{offer.title}</h3>
-        <p className="text-sm text-muted-foreground">{offer.description}</p>
-      </div>
+        {/* Footer: Country/Organization Info */}
+        <div className="flex items-center justify-between pt-4 border-t border-border">
+          <div className="flex items-center gap-3">
+            <img
+              src={offer.brandLogoSrc || "/placeholder.svg"}
+              alt={`${offer.brandName} logo`}
+              className="w-8 h-8 rounded-full bg-muted"
+            />
+            <div>
+              <p className="text-xs font-semibold text-card-foreground">
+                {offer.brandName}
+              </p>
+              {offer.promoCode && (
+                <p className="text-xs text-muted-foreground">
+                  {offer.promoCode}
+                </p>
+              )}
+            </div>
+          </div>
 
-      {/* Footer: Country/Organization Info */}
-      <div className="flex items-center justify-between pt-4 border-t border-border">
-        <div className="flex items-center gap-3">
-          <img
-            src={offer.brandLogoSrc || "/placeholder.svg"}
-            alt={`${offer.brandName} logo`}
-            className="w-8 h-8 rounded-full bg-muted"
-          />
-          <div>
-            <p className="text-xs font-semibold text-card-foreground">{offer.brandName}</p>
-            {offer.promoCode && <p className="text-xs text-muted-foreground">{offer.promoCode}</p>}
+          {/* Arrow icon that rotates on hover */}
+          <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground transform transition-transform duration-300 group-hover:rotate-[-45deg] group-hover:bg-primary group-hover:text-primary-foreground">
+            <ArrowRight className="w-4 h-4" />
           </div>
         </div>
-
-        {/* Arrow icon that rotates on hover */}
-        <div className="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-secondary-foreground transform transition-transform duration-300 group-hover:rotate-[-45deg] group-hover:bg-primary group-hover:text-primary-foreground">
-          <ArrowRight className="w-4 h-4" />
-        </div>
       </div>
-    </div>
-  </motion.a>
-))
+    </motion.a>
+  )
+);
 OfferCard.displayName = "OfferCard"
 
 export interface OfferCarouselProps extends React.HTMLAttributes<HTMLDivElement> {

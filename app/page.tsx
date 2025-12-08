@@ -233,26 +233,9 @@ export default function Home() {
       <main className="flex-1">
         {/* Hero Section */}
         <section className="py-20 px-4 relative overflow-hidden bg-primary">
-          {/* Image collage background with blue overlay */}
+          {/* Hero Section*/}
           <div className="absolute inset-0 z-0">
-            <div className="relative w-full h-full grid grid-cols-3 grid-rows-2 gap-0">
-              <div className="relative w-full h-full overflow-hidden">
-                <img
-                  src="/care-relief-collage-1.png"
-                  alt="Healthcare worker with patient"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="relative w-full h-full overflow-hidden">
-                <img
-                  src="/care-relief-collage-2.png"
-                  alt="Doctor examining patient"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="relative w-full h-full overflow-hidden">
-                <img src="/field-care.png" alt="Field healthcare" className="w-full h-full object-cover" />
-              </div>
+            <div className="relative w-full h-full">
               <div className="relative w-full h-full overflow-hidden col-span-3">
                 <img
                   src="/care-relief-collage-3.jpg"
@@ -265,18 +248,27 @@ export default function Home() {
           </div>
 
           <div className="max-w-5xl mx-auto text-center relative z-40">
-            <h1 className="text-5xl font-bold text-primary-foreground mb-6">Care. Relief. Revitalization</h1>
-            <h1 className="text-5xl font-bold text-primary-foreground mb-6">-Beginning with Jamaica.</h1>
+            <h1 className="text-5xl font-bold text-primary-foreground mb-6">
+              Care. Relief. Revitalization
+            </h1>
+            <h1 className="text-5xl font-bold text-primary-foreground mb-6">
+              -Beginning with Jamaica.
+            </h1>
             <p className="text-xl text-primary-foreground/90 mb-4 text-balance leading-relaxed">
-            A global care model built on rapid medical missions, telemedicine, community revitalization, and preventative health starting with the people and communities rebuilding after Hurricane Melissa.
+              A global care model built on rapid medical missions, telemedicine,
+              community revitalization, and preventative health starting with
+              the people and communities rebuilding after Hurricane Melissa.
             </p>
             <p className="text-lg text-primary-foreground/80 mb-8 text-balance">
-              Our first major focus is Jamaica, coordinating medical and psycho-social relief in the wake of recent
-              hurricanes.
+              Our first major focus is Jamaica, coordinating medical and
+              psycho-social relief in the wake of recent hurricanes.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Link href="/register" onClick={scrollToTop}>
-                <Button size="lg" className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 cursor-pointer">
+                <Button
+                  size="lg"
+                  className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 cursor-pointer"
+                >
                   Join as a Volunteer
                 </Button>
               </Link>
@@ -296,12 +288,17 @@ export default function Home() {
         <section className="py-16 px-4 bg-white border-t-4 border-primary">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-10">
-              <h2 className="text-4xl font-bold mb-4 text-foreground">Current Focus: Jamaica Relief</h2>
+              <h2 className="text-4xl font-bold mb-4 text-foreground">
+                Current Focus: Jamaica Relief
+              </h2>
               <p className="text-lg leading-relaxed text-gray-700 mb-0">
-                Following recent hurricanes, Jamaica is facing overlapping challenges in mental health, primary care
-                access, and basic stability. Our response prioritizes <strong>psycho-social health</strong> and{" "}
-                <strong>first medical aid</strong>, supported by a coordinated network of Jamaican and international
-                volunteers who deliver care both on the ground and through telemedicine.
+                Following recent hurricanes, Jamaica is facing overlapping
+                challenges in mental health, primary care access, and basic
+                stability. Our response prioritizes{" "}
+                <strong>psycho-social health</strong> and{" "}
+                <strong>first medical aid</strong>, supported by a coordinated
+                network of Jamaican and international volunteers who deliver
+                care both on the ground and through telemedicine.
               </p>
             </div>
 
@@ -357,7 +354,9 @@ export default function Home() {
                 <ul className="space-y-3 text-foreground/80">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Mental health support for trauma and emotional recovery</span>
+                    <span>
+                      Mental health support for trauma and emotional recovery
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -383,25 +382,29 @@ export default function Home() {
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>International doctors can help remotely</strong> - Provide care from anywhere via
-                      telemedicine
+                      <strong>International doctors can help remotely</strong> -
+                      Provide care from anywhere via telemedicine
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>Local Jamaican doctors</strong> - On-the-ground expertise and community knowledge
+                      <strong>Local Jamaican doctors</strong> - On-the-ground
+                      expertise and community knowledge
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>
-                      <strong>International field volunteers</strong> - Hands-on support in affected areas
+                      <strong>International field volunteers</strong> - Hands-on
+                      support in affected areas
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>All volunteers work together as a coordinated network</span>
+                    <span>
+                      All volunteers work together as a coordinated network
+                    </span>
                   </li>
                 </ul>
               </Card>
@@ -412,13 +415,18 @@ export default function Home() {
               <div className="flex items-start gap-4">
                 <Shield className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold mb-2">Medical Certification Support</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    Medical Certification Support
+                  </h3>
                   <p className="text-foreground/80 leading-relaxed">
-                    We actively support eligible clinicians in obtaining the approvals required to practice in Jamaica.
-                    This includes guidance on documentation, coordination with the <strong>Ministry of Health</strong>{" "}
-                    and <strong>Medical Council of Jamaica</strong>, and clear step-by-step instructions. Our goal is to
-                    remove friction so you can focus on what matters most: providing safe, high-quality care to people
-                    who need it.
+                    We actively support eligible clinicians in obtaining the
+                    approvals required to practice in Jamaica. This includes
+                    guidance on documentation, coordination with the{" "}
+                    <strong>Ministry of Health</strong> and{" "}
+                    <strong>Medical Council of Jamaica</strong>, and clear
+                    step-by-step instructions. Our goal is to remove friction so
+                    you can focus on what matters most: providing safe,
+                    high-quality care to people who need it.
                   </p>
                 </div>
               </div>
@@ -426,7 +434,10 @@ export default function Home() {
 
             <div className="text-center mt-8">
               <Link href="/register" onClick={scrollToTop}>
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer">
+                <Button
+                  size="lg"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer"
+                >
                   Register to Help Jamaica
                 </Button>
               </Link>
@@ -437,9 +448,12 @@ export default function Home() {
         {/* Previous Medical Missions Section */}
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl font-bold mb-4 text-center">Previous Medical Missions</h2>
+            <h2 className="text-4xl font-bold mb-4 text-center">
+              Previous Medical Missions
+            </h2>
             <p className="text-center text-foreground/70 mb-12 max-w-2xl mx-auto">
-              Our track record of providing critical healthcare support during times of crisis and community need.
+              Our track record of providing critical healthcare support during
+              times of crisis and community need.
             </p>
 
             <div className="grid md:grid-cols-3 gap-6">
@@ -454,8 +468,9 @@ export default function Home() {
                   </div>
                   <h3 className="font-semibold mb-2">Hurricane Relief 2024</h3>
                   <p className="text-sm text-foreground/70">
-                    Coordinated medical, psycho-social, and logistical support for communities heavily impacted by
-                    severe storms, working alongside local health centers and relief agencies.
+                    Coordinated medical, psycho-social, and logistical support
+                    for communities heavily impacted by severe storms, working
+                    alongside local health centers and relief agencies.
                   </p>
                 </a>
               </Card>
@@ -469,10 +484,13 @@ export default function Home() {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                     />
                   </div>
-                  <h3 className="font-semibold mb-2">Community Health Outreach</h3>
+                  <h3 className="font-semibold mb-2">
+                    Community Health Outreach
+                  </h3>
                   <p className="text-sm text-foreground/70">
-                    Mobile outreach to underserved communities, focusing on preventative care, health education, and
-                    early identification of at-risk individuals and families.
+                    Mobile outreach to underserved communities, focusing on
+                    preventative care, health education, and early
+                    identification of at-risk individuals and families.
                   </p>
                 </a>
               </Card>
@@ -488,8 +506,9 @@ export default function Home() {
                   </div>
                   <h3 className="font-semibold mb-2">Disaster Coordination</h3>
                   <p className="text-sm text-foreground/70">
-                    Joint planning and rapid response with local authorities, shelters, and NGOs to align medical
-                    resources, volunteers, and information flows during emergencies.
+                    Joint planning and rapid response with local authorities,
+                    shelters, and NGOs to align medical resources, volunteers,
+                    and information flows during emergencies.
                   </p>
                 </a>
               </Card>
@@ -504,31 +523,46 @@ export default function Home() {
         {/* About/Charter Section */}
         <section className="py-16 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center">About Intellibus Care Foundation</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center">
+              About Intellibus Care Foundation
+            </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="space-y-3 text-center">
-                <h3 className="text-lg font-semibold text-primary">Our Purpose</h3>
+                <h3 className="text-lg font-semibold text-primary">
+                  Our Purpose
+                </h3>
                 <p className="text-foreground/80 leading-relaxed">
-                  We exist to provide care, relief, and revitalization in places where shocks such as natural disasters,
-                  economic disruption, or systemic gaps leave people without adequate support. We do this through direct
-                  services, grantmaking, and partnerships that strengthen local capacity rather than replace it.
+                  We exist to provide care, relief, and revitalization in places
+                  where shocks such as natural disasters, economic disruption,
+                  or systemic gaps leave people without adequate support. We do
+                  this through direct services, grantmaking, and partnerships
+                  that strengthen local capacity rather than replace it.
                 </p>
               </div>
               <div className="space-y-3 text-center">
-                <h3 className="text-lg font-semibold text-primary">Legal & Governance</h3>
+                <h3 className="text-lg font-semibold text-primary">
+                  Legal & Governance
+                </h3>
                 <p className="text-foreground/80 leading-relaxed">
-                  Intellibus Care Foundation is an independent nonprofit foundation established by Intellibus and
-                  aligned with the World Digital Governance (WDG) mission. The foundation is overseen by an independent
-                  board and program directors who ensure that funding, programs, and technology are used ethically,
-                  transparently, and in the best interests of the communities we serve
+                  Intellibus Care Foundation is an independent nonprofit
+                  foundation established by Intellibus and aligned with the
+                  World Digital Governance (WDG) mission. The foundation is
+                  overseen by an independent board and program directors who
+                  ensure that funding, programs, and technology are used
+                  ethically, transparently, and in the best interests of the
+                  communities we serve
                 </p>
               </div>
               <div className="space-y-3 text-center">
-                <h3 className="text-lg font-semibold text-primary">Technology Backbone</h3>
+                <h3 className="text-lg font-semibold text-primary">
+                  Technology Backbone
+                </h3>
                 <p className="text-foreground/80 leading-relaxed">
-                  Our programs are powered by Atlas Mesh and the DigitalJamaica grant ledger, enabling transparent
-                  tracking of resources, needs, and impact. This infrastructure helps us match volunteers and medical
-                  professionals with real-time needs on the ground and ensures that every intervention can be measured
+                  Our programs are powered by Atlas Mesh and the DigitalJamaica
+                  grant ledger, enabling transparent tracking of resources,
+                  needs, and impact. This infrastructure helps us match
+                  volunteers and medical professionals with real-time needs on
+                  the ground and ensures that every intervention can be measured
                   and continuously improved.
                 </p>
               </div>
@@ -540,10 +574,12 @@ export default function Home() {
         <section className="h-screen flex items-center px-4 bg-gradient-to-br from-primary via-primary/95 to-blue-600">
           <div className="max-w-7xl mx-auto w-full h-full py-8 flex flex-col">
             <div className="mb-6">
-              <h3 className="text-4xl font-bold text-primary-foreground mb-3">Three Core Areas</h3>
+              <h3 className="text-4xl font-bold text-primary-foreground mb-3">
+                Three Core Areas
+              </h3>
               <p className="text-lg text-primary-foreground/90 leading-relaxed max-w-2xl">
-                Our mission is built on three interconnected pillars that work together to create lasting positive
-                change
+                Our mission is built on three interconnected pillars that work
+                together to create lasting positive change
               </p>
             </div>
             <div className="flex-1 min-h-0">
@@ -554,21 +590,30 @@ export default function Home() {
 
         <section className="py-16 px-4 bg-white">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">What We Support</h2>
+            <h2 className="text-3xl font-bold mb-12 text-center">
+              What We Support
+            </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {focusAreas.map((area, idx) => {
-                const Icon = area.icon
+                const Icon = area.icon;
                 return (
-                  <Card key={idx} className="p-6 bg-card hover:shadow-lg transition-shadow border border-border">
+                  <Card
+                    key={idx}
+                    className="p-6 bg-card hover:shadow-lg transition-shadow border border-border"
+                  >
                     <div className="flex items-start gap-4">
                       <Icon className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
                       <div className="flex-1">
-                        <h3 className="text-base font-semibold mb-1">{area.title}</h3>
-                        <p className="text-sm text-foreground/70">{area.description}</p>
+                        <h3 className="text-base font-semibold mb-1">
+                          {area.title}
+                        </h3>
+                        <p className="text-sm text-foreground/70">
+                          {area.description}
+                        </p>
                       </div>
                     </div>
                   </Card>
-                )
+                );
               })}
             </div>
           </div>
@@ -576,14 +621,16 @@ export default function Home() {
 
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl font-bold mb-8 text-center">Doctor's Journey with Us</h2>
+            <h2 className="text-4xl font-bold mb-8 text-center">
+              Doctor's Journey with Us
+            </h2>
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
               From registration to impact: A clear path to making a difference
             </p>
 
             <div className="grid md:grid-cols-5 gap-6">
               {journeySteps.map((step, index) => {
-                const Icon = step.icon
+                const Icon = step.icon;
                 return (
                   <div key={index} className="text-center space-y-4">
                     <div className="flex justify-center">
@@ -591,19 +638,28 @@ export default function Home() {
                         <Icon className="w-8 h-8 text-primary" />
                       </div>
                     </div>
-                    <div className="text-2xl font-bold text-primary/40">{step.number}</div>
+                    <div className="text-2xl font-bold text-primary/40">
+                      {step.number}
+                    </div>
                     <div>
-                      <p className="font-semibold text-foreground mb-2">{step.title}</p>
-                      <p className="text-sm text-muted-foreground">{step.description}</p>
+                      <p className="font-semibold text-foreground mb-2">
+                        {step.title}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {step.description}
+                      </p>
                     </div>
                   </div>
-                )
+                );
               })}
             </div>
 
             <div className="text-center mt-10">
               <Link href="/register" onClick={scrollToTop}>
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer">
+                <Button
+                  size="lg"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer"
+                >
                   Start Your Journey
                 </Button>
               </Link>
@@ -615,35 +671,50 @@ export default function Home() {
         <section className="py-16 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-foreground mb-4">Technology-Enabled Healthcare</h2>
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                Technology-Enabled Healthcare
+              </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Bridging distances through telemedicine and collaborative care platforms to ensure no community is left
-                behind.
+                Bridging distances through telemedicine and collaborative care
+                platforms to ensure no community is left behind.
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-56 overflow-hidden">
-                  <img src="/telemedicine-1.png" alt="Virtual consultation" className="w-full h-full object-cover" />
+                  <img
+                    src="/telemedicine-1.png"
+                    alt="Virtual consultation"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Virtual Consultations</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Virtual Consultations
+                  </h3>
                   <p className="text-muted-foreground">
-                    Connecting patients with healthcare professionals through secure video platforms for real-time
-                    medical guidance.
+                    Connecting patients with healthcare professionals through
+                    secure video platforms for real-time medical guidance.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="relative h-56 overflow-hidden">
-                  <img src="/team-meeting.png" alt="Team collaboration" className="w-full h-full object-cover" />
+                  <img
+                    src="/team-meeting.png"
+                    alt="Team collaboration"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Global Collaboration</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Global Collaboration
+                  </h3>
                   <p className="text-muted-foreground">
-                    Multi-disciplinary teams working together across borders to provide comprehensive care solutions.
+                    Multi-disciplinary teams working together across borders to
+                    provide comprehensive care solutions.
                   </p>
                 </CardContent>
               </Card>
@@ -659,8 +730,8 @@ export default function Home() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
                   <p className="text-muted-foreground">
-                    Round-the-clock access to medical professionals ensuring continuous care and emergency response
-                    capabilities.
+                    Round-the-clock access to medical professionals ensuring
+                    continuous care and emergency response capabilities.
                   </p>
                 </CardContent>
               </Card>
@@ -672,9 +743,12 @@ export default function Home() {
         <section id="our-people" className="py-16 px-4 bg-gray-50">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">Our Healthcare Network</h2>
+              <h2 className="text-4xl font-bold mb-4">
+                Our Healthcare Network
+              </h2>
               <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-                Meet the dedicated healthcare professionals providing care, relief, and support to communities in need
+                Meet the dedicated healthcare professionals providing care,
+                relief, and support to communities in need
               </p>
             </div>
 
@@ -697,10 +771,13 @@ export default function Home() {
         {/* CTA Section */}
         <section className="py-20 px-4 bg-gradient-to-br from-primary via-primary/95 to-blue-600 text-primary-foreground">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-6">Ready to Make an Impact?</h2>
+            <h2 className="text-4xl font-bold mb-6">
+              Ready to Make an Impact?
+            </h2>
             <p className="text-xl mb-8 leading-relaxed text-primary-foreground/90">
-              Join healthcare professionals from around the world providing critical psycho-social health support and
-              first medical aid to Jamaica
+              Join healthcare professionals from around the world providing
+              critical psycho-social health support and first medical aid to
+              Jamaica
             </p>
             <Link href="/register" onClick={scrollToTop}>
               <Button
@@ -727,5 +804,5 @@ export default function Home() {
         </button>
       )}
     </div>
-  )
+  );
 }
