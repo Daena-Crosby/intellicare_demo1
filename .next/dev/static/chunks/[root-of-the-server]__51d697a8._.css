@@ -5323,6 +5323,12 @@
   }
 
   @media (min-width: 40rem) {
+    .sm\:hidden {
+      display: none;
+    }
+  }
+
+  @media (min-width: 40rem) {
     .sm\:inline {
       display: inline;
     }
@@ -5609,8 +5615,20 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:block {
+      display: block;
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:flex {
       display: flex;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .lg\:hidden {
+      display: none;
     }
   }
 

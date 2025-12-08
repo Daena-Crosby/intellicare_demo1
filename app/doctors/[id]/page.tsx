@@ -186,6 +186,22 @@ export default async function DoctorDetailPage({
               </CardContent>
             </Card>
 
+            <div className="lg:hidden">              
+              {profile?.bio && (
+                <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+                  <CardContent className="p-6">
+                    <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
+                      <User className="h-6 w-6 text-blue-200" />
+                      Bio
+                    </h2>
+                    <p className="text-pretty text-base leading-relaxed text-slate-300">
+                      {profile.bio}
+                    </p>
+                  </CardContent>
+                </Card>
+              )}
+              </div>  
+
             {/* Core Values Card */}
             {profile?.core_values && (
               <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
@@ -234,19 +250,21 @@ export default async function DoctorDetailPage({
 
           {/* Right Content Area */}
           <div className="space-y-6">
-            {profile?.bio && (
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
-                <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
-                    <User className="h-6 w-6 text-blue-200" />
-                    Bio
-                  </h2>
-                  <p className="text-pretty text-base leading-relaxed text-slate-300">
-                    {profile.bio}
-                  </p>
-                </CardContent>
-              </Card>
-            )}
+            <div className="hidden lg:block">
+              {profile?.bio && (
+                <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+                  <CardContent className="p-6">
+                    <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
+                      <User className="h-6 w-6 text-blue-200" />
+                      Bio
+                    </h2>
+                    <p className="text-pretty text-base leading-relaxed text-slate-300">
+                      {profile.bio}
+                    </p>
+                  </CardContent>
+                </Card>
+              )}
+            </div>
             {/* Goals */}
             <div className="grid gap-6 ">
               {profile?.goals &&

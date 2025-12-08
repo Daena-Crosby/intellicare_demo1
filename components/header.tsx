@@ -73,7 +73,7 @@ export default function Header() {
           >
             What we Do
           </Link>
-          
+
           <Link
             href="/doctors"
             aria-current={isActive("/doctors") ? "page" : undefined}
@@ -149,17 +149,29 @@ export default function Header() {
         <div className="md:hidden border-t border-border bg-card">
           <nav className="max-w-6xl mx-auto px-4 py-6 flex flex-col gap-4">
             <Link
-              href="/"
+              href="/about"
               className={`px-4 py-3 rounded-lg transition-colors ${
-                isActive("/")
+                isActive("/doctors")
                   ? "bg-primary text-primary-foreground font-semibold"
                   : "hover:bg-muted"
               }`}
             >
-              Home
+              About
             </Link>
+
             <Link
               href="/doctors"
+              className={`px-4 py-3 rounded-lg transition-colors ${
+                isActive("/doctors")
+                  ? "bg-primary text-primary-foreground font-semibold"
+                  : "hover:bg-muted"
+              }`}
+            >
+              What we Do
+            </Link>
+            
+            <Link
+              href="/what-we-do"
               className={`px-4 py-3 rounded-lg transition-colors ${
                 isActive("/doctors")
                   ? "bg-primary text-primary-foreground font-semibold"
@@ -177,7 +189,19 @@ export default function Header() {
               }`}
             >
               Missions
+            </Link> 
+
+            <Link
+              href="/media"
+              className={`px-4 py-3 rounded-lg transition-colors ${
+                isActive("/media")
+                  ? "bg-primary text-primary-foreground font-semibold"
+                  : "hover:bg-muted"
+              }`}
+            >
+              Media
             </Link>
+
             <Link
               href="/register"
               className={`px-4 py-3 rounded-lg transition-colors ${

@@ -459,7 +459,7 @@ export const doctorDatabase = {
     bio: "Dr. Hajauni Parsons is a Jamaican medical doctor with experience in both hospital and community clinical settings. Currently working at Spanish Town Hospital, he manages a wide range of general medical cases with a hands-on, practical approach to patient care. He is deeply motivated by service, skill development, and the opportunity to grow into a more specialized clinical role in the future.",
 
     education:
-      "Bachelor of Medicine, Bachelor of Surgery (MBBS), followed by two years of practical clinical experience across various hospital departments.",
+      "Bachelor of Medicine. Bachelor of Surgery (MBBS). followed by two years of practical clinical experience across various hospital departments.",
 
     certifications: [
       "Medical Doctor (Registered)",
