@@ -1,0 +1,7 @@
+/* global.css or component CSS */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+}

@@ -42,14 +42,14 @@ export function VerticalValuesScroll({ values }: VerticalValuesScrollProps) {
         {/* Left side - Text content */}
         <div
           ref={scrollRef}
-          className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide"
+          className="h-full overflow-y-auto snap-y snap-mandatory scrollbar-hide ml-4"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {values.map((value, index) => (
             <div key={index} className="h-full flex flex-col justify-center snap-start snap-always px-4 lg:px-6">
               <div
                 className={`transition-all duration-500 ${
-                  index === activeIndex ? "opacity-100 translate-x-0" : "opacity-30 -translate-x-4"
+                  index === activeIndex ? "opacity-100 translate-x-0" : "opacity-30 -translate-x-6"
                 }`}
               >
                 <h3 className="text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">{value.title}</h3>

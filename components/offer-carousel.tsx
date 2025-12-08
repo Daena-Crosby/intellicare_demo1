@@ -4,6 +4,11 @@ import * as React from "react"
 import { motion } from "framer-motion"
 import { ChevronLeft, ChevronRight, ArrowRight, Tag } from "lucide-react"
 import { cn } from "@/lib/utils"
+import './../app/offer-carousel.css'
+import flagsJson from './../flags.json';
+
+const flags = flagsJson as unknown as Record<string, string>;
+
 
 /**
  * Offer Carousel Component
@@ -38,12 +43,25 @@ interface OfferCardProps {
 }
 
 /**
+ * Convert a 2-letter country code to an emoji flag
+ * @param countryCode - ISO 3166-1 alpha-2 code (e.g., "US", "JM")
+ */
+function countryCodeToFlag(countryCode: string) {
+  return countryCode
+    .toUpperCase()
+    .replace(/./g, char =>
+      String.fromCodePoint(127397 + char.charCodeAt(0))
+    );
+}
+
+/**
  * OfferCard Component
  *
  * Individual card within the carousel showing doctor information.
  * Includes hover animation that lifts the card up slightly.
  */
 const OfferCard = React.forwardRef<HTMLAnchorElement, OfferCardProps>(
+  
   ({ offer }, ref) => (
     <motion.a
       ref={ref}
@@ -58,32 +76,27 @@ const OfferCard = React.forwardRef<HTMLAnchorElement, OfferCardProps>(
       <img
         src={offer.imageSrc || "/placeholder.svg"}
         alt={offer.imageAlt}
-        className="absolute inset-0 w-full h-2/4 object-top object-cover transition-transform duration-500 group-hover:scale-110"
+        className="absolute inset-0 w-full h-4/5 object-cover transition-transform duration-500 group-hover:scale-110"
       />
 
       {/* Bottom half: Card Content */}
       <div className="absolute bottom-0 left-0 right-0 h-2/4 bg-card p-5 flex flex-col justify-between">
         <div className="space-y-2">
-          {/* Tag (Work Preference) */}
-          <div className="flex items-center text-xs text-muted-foreground">
-            <Tag className="w-4 h-4 mr-2 text-primary" />
-            <span>{offer.tag}</span>
-          </div>
 
           {/* Doctor Name & Description */}
           <h3 className="text-xl font-bold text-card-foreground leading-tight">
             {offer.title}
           </h3>
-          <p className="text-sm text-muted-foreground">{offer.description}</p>
+          <p className="text-sm text-muted-foreground line-clamp-3">{offer.description}</p>
         </div>
 
         {/* Footer: Country/Organization Info */}
         <div className="flex items-center justify-between pt-4 border-t border-border">
           <div className="flex items-center gap-3">
             <img
-              src={offer.brandLogoSrc || "/placeholder.svg"}
-              alt={`${offer.brandName} logo`}
-              className="w-8 h-8 rounded-full bg-muted"
+              src={`https://flagcdn.com/24x18/${flags[offer.brandName]}.png`}
+              alt={`${flags["Jamaica"]} flag`}
+              className="w-6 h-4 rounded-sm object-cover"
             />
             <div>
               <p className="text-xs font-semibold text-card-foreground">
@@ -137,7 +150,7 @@ const OfferCarousel = React.forwardRef<HTMLDivElement, OfferCarouselProps>(({ of
   }
 
   return (
-    <div ref={ref} className={cn("relative w-full group", className)} {...props}>
+    <div ref={ref} className={cn("relative w-full group overflow-y-auto scrollbar-hide", className)} {...props}>
       {/* Left Navigation Button (appears on hover) */}
       <button
         onClick={() => scroll("left")}

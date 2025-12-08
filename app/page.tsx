@@ -248,18 +248,18 @@ export default function Home() {
           </div>
 
           <div className="max-w-5xl mx-auto text-center relative z-40">
-            <h1 className="text-5xl font-bold text-primary-foreground mb-6 sm:text-start md:text-center">
+            <h1 className="text-6xl font-bold text-primary-foreground mb-6 text-start md:text-center">
               Care. Relief. Revitalization
             </h1>
-            <h1 className="text-3xl font-bold text-primary-foreground mb-6 md:text-5xl">
-              -Beginning with Jamaica.
+            <h1 className="text-[26px] font-semibold text-primary-foreground mb-6 text-start md:text-center md:text-4xl">
+              Beginning with Jamaica.
             </h1>
-            <p className="text-xl text-primary-foreground/90 mb-4 text-balance leading-relaxed">
+            <p className="text-xl text-primary-foreground/90 mb-4 text-balance leading-relaxed text-start md:text-center">
               A global care model built on rapid medical missions, telemedicine,
               community revitalization, and preventative health starting with
               the people and communities rebuilding after Hurricane Melissa.
             </p>
-            <p className="text-lg text-primary-foreground/80 mb-8 text-balance">
+            <p className="text-lg text-primary-foreground/80 mb-8 text-balance text-start md:text-center">
               Our first major focus is Jamaica, coordinating medical and
               psycho-social relief in the wake of recent hurricanes.
             </p>
@@ -445,6 +445,35 @@ export default function Home() {
           </div>
         </section>
 
+{/* Healthcare Network Carousel */}
+        <section id="our-people" className="py-16 px-4 bg-gray-50">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold mb-4">
+                Our Healthcare Network
+              </h2>
+              <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
+                Meet the dedicated healthcare professionals providing care,
+                relief, and support to communities in need
+              </p>
+            </div>
+
+            <OfferCarousel offers={doctorProfiles} />
+
+            <div className="text-center mt-12">
+              <Link href="/doctors" onClick={scrollToTop}>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary/10 bg-transparent cursor-pointer hover:text-primary"
+                >
+                  View All Volunteers
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Previous Medical Missions Section */}
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-5xl mx-auto">
@@ -457,66 +486,64 @@ export default function Home() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full">
-  {/* Card 1 */}
-  <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer w-full">
-    <a href="https://www.intellibus.care/missions/melissa-recovery">
-      <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-        <img
-          src="/field-care.jpg"
-          alt="Hurricane relief field work"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-        />
-      </div>
-      <h3 className="font-semibold mb-2">Melissa Recovery Across Jamaica</h3>
-      <h4 className="font-light text-[14px] mb-2">Supporting communities across parishes</h4>
-      <p className="text-sm text-foreground/70 flex gap-2">
-        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-        Mapping medical needs across parishes
-      </p>
-      <p className="text-sm text-foreground/70 flex gap-2"> 
-        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-        Deploying Starlink-powered telehealth terminals
-      </p>
-      <p className="text-sm text-foreground/70 flex gap-2">
-        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-        Distributing diagnostic kits for leptospirosis and cholera
-      </p>
-      <p className="text-sm text-foreground/70 flex gap-2">
-        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-        Coordinating with ODPEM, MLSS, and community partners
-      </p>
-    </a>
-  </Card>
+              {/* Card 1 */}
+              <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer w-full">
+                <a href="https://www.intellibus.care/missions/melissa-recovery">
+                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/field-care.jpg"
+                      alt="Hurricane relief field work"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <h3 className="font-semibold mb-2">Melissa Recovery Across Jamaica</h3>
+                  <h4 className="font-light text-[14px] mb-2">Supporting communities across parishes</h4>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Mapping medical needs across parishes
+                  </p>
+                  <p className="text-sm text-foreground/70 flex gap-2"> 
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Deploying Starlink-powered telehealth terminals
+                  </p>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Distributing diagnostic kits for leptospirosis and cholera
+                  </p>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Coordinating with ODPEM, MLSS, and community partners
+                  </p>
+                </a>
+              </Card>
 
-  {/* Card 2 - Updated */}
-  <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer w-full">
-    <a href="https://www.intellibus.care/missions/bluefields-mernsville">
-      <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
-        <img
-          src="/team-meeting.jpg"
-          alt="Bluefields & Mernsville telemedicine and relief"
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-        />
-      </div>
-      <h3 className="font-semibold mb-2">Bluefields & Mernsville</h3>
-      <h4 className="font-light text-[14px] mb-2">Restoring care access after Hurricane Melissa</h4>
-      <p className="text-sm text-foreground/70 flex gap-2">
-        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-        Building telemedicine nodes, diagnostic clinics, and community pods
-      </p>
-      <p className="text-sm text-foreground/70 flex gap-2">
-        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-        Running medical missions with JDF, BDF, UWI, and international doctors
-      </p>
-      <p className="text-sm text-foreground/70 flex gap-2">
-        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-        Supporting small businesses and youth talent programs
-      </p>
-    </a>
-  </Card>
-</div>
-
-
+              {/* Card 2 - Updated */}
+              <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer w-full">
+                <a href="https://www.intellibus.care/missions/bluefields-mernsville">
+                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/team-meeting.jpg"
+                      alt="Bluefields & Mernsville telemedicine and relief"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <h3 className="font-semibold mb-2">Bluefields & Mernsville</h3>
+                  <h4 className="font-light text-[14px] mb-2">Restoring care access after Hurricane Melissa</h4>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Building telemedicine nodes, diagnostic clinics, and community pods
+                  </p>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Running medical missions with JDF, BDF, UWI, and international doctors
+                  </p>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Supporting small businesses and youth talent programs
+                  </p>
+                </a>
+              </Card>
+            </div>
             <p className="text-center text-muted-foreground mt-8 italic">
               More mission details and impact stories coming soon.
             </p>
@@ -574,7 +601,7 @@ export default function Home() {
         </section>
 
         {/* Three Core Areas Section */}
-        <section className="h-screen flex items-center px-4 bg-gradient-to-br from-primary via-primary/95 to-blue-600">
+        <section className="h-[500px] flex items-center px-4 bg-gradient-to-br from-primary via-primary/95 to-blue-600">
           <div className="max-w-7xl mx-auto w-full h-full py-8 flex flex-col">
             <div className="mb-6">
               <h3 className="text-4xl font-bold text-primary-foreground mb-3">
@@ -585,7 +612,7 @@ export default function Home() {
                 together to create lasting positive change
               </p>
             </div>
-            <div className="flex-1 min-h-0">
+            <div className="flex-1 min-h-0 h-[400px]">
               <VerticalValuesScroll values={coreValues} />
             </div>
           </div>
@@ -738,35 +765,6 @@ export default function Home() {
                   </p>
                 </CardContent>
               </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Healthcare Network Carousel */}
-        <section id="our-people" className="py-16 px-4 bg-gray-50">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-4">
-                Our Healthcare Network
-              </h2>
-              <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-                Meet the dedicated healthcare professionals providing care,
-                relief, and support to communities in need
-              </p>
-            </div>
-
-            <OfferCarousel offers={doctorProfiles} />
-
-            <div className="text-center mt-12">
-              <Link href="/doctors" onClick={scrollToTop}>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-primary text-primary hover:bg-primary/10 bg-transparent cursor-pointer hover:text-primary"
-                >
-                  View All Volunteers
-                </Button>
-              </Link>
             </div>
           </div>
         </section>
