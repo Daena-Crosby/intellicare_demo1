@@ -1,0 +1,20 @@
+{
+  "node": {
+    "40b656685f43d8d1d1825fa44b99fd9bde9a44fe23": {
+      "workers": {
+        "app/register/page": {
+          "moduleId": 21346,
+          "async": false,
+          "exportedName": "registerDoctor",
+          "filename": "app/actions/register-doctor.tsx"
+        }
+      },
+      "layer": {
+        "app/register/page": "action-browser"
+      },
+      "exportedName": "registerDoctor",
+      "filename": "app/actions/register-doctor.tsx"
+    }
+  },
+  "edge": {}
+}

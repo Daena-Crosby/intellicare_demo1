@@ -1,0 +1,20 @@
+{
+  "node": {
+    "40650a1f4c9a5d957602e9311153251e0ddbdeb058": {
+      "workers": {
+        "app/dashboard/page": {
+          "moduleId": 10199,
+          "async": false,
+          "exportedName": "deleteDoctor",
+          "filename": "app/actions/delete-doctor.ts"
+        }
+      },
+      "layer": {
+        "app/dashboard/page": "action-browser"
+      },
+      "exportedName": "deleteDoctor",
+      "filename": "app/actions/delete-doctor.ts"
+    }
+  },
+  "edge": {}
+}
