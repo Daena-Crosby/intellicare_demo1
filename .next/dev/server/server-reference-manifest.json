@@ -1,21 +1,5 @@
 {
-  "node": {
-    "403a62b006a726707bba1c263c8fd94c5b112d7716": {
-      "workers": {
-        "app/register/page": {
-          "moduleId": "[project]/.next-internal/server/app/register/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/actions/register-doctor.tsx [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "registerDoctor",
-          "filename": "app/actions/register-doctor.tsx"
-        }
-      },
-      "layer": {
-        "app/register/page": "action-browser"
-      },
-      "filename": "app/actions/register-doctor.tsx",
-      "exportedName": "registerDoctor"
-    }
-  },
+  "node": {},
   "edge": {},
   "encryptionKey": "KG62KOoPF778tvV7ElfopXH3EqvZq0DDvhHHcrZayjE="
 }
