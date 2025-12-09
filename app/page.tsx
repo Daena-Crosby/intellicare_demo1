@@ -248,7 +248,7 @@ export default function Home() {
           </div>
 
           <div className="max-w-5xl mx-auto text-center relative z-40">
-            <h1 className="text-6xl font-bold text-primary-foreground mb-6 text-start md:text-center">
+            <h1 className="text-5xl font-bold text-primary-foreground mb-6 text-start md:text-center md:text-6xl">
               Care. Relief. Revitalization
             </h1>
             <h1 className="text-[26px] font-semibold text-primary-foreground mb-6 text-start md:text-center md:text-4xl">
