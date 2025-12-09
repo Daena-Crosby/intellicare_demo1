@@ -110,17 +110,87 @@ export default function DoctorsPage() {
     return matchesSearch && matchesSpecialty && matchesCountry
   })
 
-  if (isLoading) {
-    return (
-      <div className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-1 flex items-center justify-center">
-          <p className="text-muted-foreground">Loading healthcare professionals...</p>
-        </main>
-        <Footer />
-      </div>
-    )
-  }
+if (isLoading) {
+  return (
+    <div className="flex flex-col min-h-screen bg-background">
+      <Header />
+
+      <main className="flex-1 py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+
+          {/* Page header skeleton */}
+          <div className="text-center mb-10">
+            <div className="mx-auto h-8 w-80 rounded-md bg-gray-300 animate-pulse" />
+            <div className="mx-auto mt-3 h-4 w-96 rounded-md bg-gray-300/80 animate-pulse" />
+          </div>
+
+          {/* Filters skeleton */}
+          <div className="grid md:grid-cols-3 gap-4 mb-8 bg-card p-4 md:p-6 rounded-lg">
+            <div className="space-y-2">
+              <div className="h-4 w-24 rounded bg-gray-300 animate-pulse" />
+              <div className="h-10 rounded-md bg-gray-300 animate-pulse" />
+            </div>
+            <div className="space-y-2">
+              <div className="h-4 w-28 rounded bg-gray-300 animate-pulse" />
+              <div className="h-10 rounded-md bg-gray-300 animate-pulse" />
+            </div>
+            <div className="space-y-2">
+              <div className="h-4 w-20 rounded bg-gray-300 animate-pulse" />
+              <div className="h-10 rounded-md bg-gray-300 animate-pulse" />
+            </div>
+          </div>
+
+          {/* Doctor cards skeleton grid */}
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+            {Array.from({ length: 9 }).map((_, i) => (
+              <div
+                key={i}
+                className="overflow-hidden rounded-lg border border-border bg-card p-4 flex flex-col gap-4 animate-pulse"
+              >
+                {/* avatar row */}
+                <div className="flex items-center gap-4">
+                  <div className="shrink-0">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gray-300" />
+                  </div>
+
+                  <div className="flex-1 space-y-2">
+                    <div className="h-4 w-3/4 bg-gray-300 rounded" />
+                    <div className="h-3 w-1/2 bg-gray-300 rounded" />
+                  </div>
+                </div>
+
+                {/* badges */}
+                <div className="flex gap-2 flex-wrap">
+                  <div className="h-6 w-20 rounded-md bg-gray-300" />
+                  <div className="h-6 w-16 rounded-md bg-gray-300" />
+                  <div className="h-6 w-12 rounded-md bg-gray-300" />
+                </div>
+
+                {/* bio lines */}
+                <div className="space-y-2 mt-1">
+                  <div className="h-3 w-full bg-gray-300 rounded" />
+                  <div className="h-3 w-11/12 bg-gray-300 rounded" />
+                </div>
+
+                {/* CTA placeholder */}
+                <div className="mt-auto">
+                  <div className="h-8 w-32 rounded bg-gray-300 ml-auto" />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="col-span-full text-center py-12 hidden">
+            <p className="text-muted-foreground text-lg">Loading doctors...</p>
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  )
+}
+
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -155,7 +225,6 @@ export default function DoctorsPage() {
               <Select
                 value={specialtyFilter}
                 onValueChange={setSpecialtyFilter}
-                className="cursor-pointer"
               >
                 <SelectTrigger className="cursor-pointer">
                   <SelectValue />
