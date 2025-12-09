@@ -21,6 +21,7 @@ import {
   Brain,
   Badge as Bandage,
 } from "lucide-react"
+import  GrantSection  from "@/components/homepage-ui/grant-support"
 import { useEffect, useState } from "react"
 
 export default function Home() {
@@ -244,21 +245,21 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-3 text-foreground/80">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span>
                       Mental health support for trauma and emotional recovery
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span>First medical aid and emergency triage</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span>Crisis counseling and psychosocial support</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span>Primary care and wound management</span>
                   </li>
                 </ul>
@@ -271,28 +272,28 @@ export default function Home() {
                 </h3>
                 <ul className="space-y-3 text-foreground/80">
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span>
                       <strong>International doctors can help remotely</strong> -
                       Provide care from anywhere via telemedicine
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span>
                       <strong>Local Jamaican doctors</strong> - On-the-ground
                       expertise and community knowledge
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span>
                       <strong>International field volunteers</strong> - Hands-on
                       support in affected areas
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span>
                       All volunteers work together as a coordinated network
                     </span>
@@ -304,7 +305,7 @@ export default function Home() {
             {/* Medical certification support */}
             <Card className="p-6 bg-muted/30 border-2 border-primary mb-0">
               <div className="flex items-start gap-4">
-                <Shield className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                <Shield className="w-8 h-8 text-primary shrink-0 mt-1" />
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold mb-2">
                     Medical Certification Support
@@ -389,19 +390,19 @@ export default function Home() {
                   <h3 className="font-semibold mb-2">Melissa Recovery Across Jamaica</h3>
                   <h4 className="font-light text-[14px] mb-2">Supporting communities across parishes</h4>
                   <p className="text-sm text-foreground/70 flex gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     Mapping medical needs across parishes
                   </p>
                   <p className="text-sm text-foreground/70 flex gap-2"> 
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     Deploying Starlink-powered telehealth terminals
                   </p>
                   <p className="text-sm text-foreground/70 flex gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     Distributing diagnostic kits for leptospirosis and cholera
                   </p>
                   <p className="text-sm text-foreground/70 flex gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     Coordinating with ODPEM, MLSS, and community partners
                   </p>
                 </a>
@@ -420,15 +421,15 @@ export default function Home() {
                   <h3 className="font-semibold mb-2">Bluefields & Mernsville</h3>
                   <h4 className="font-light text-[14px] mb-2">Restoring care access after Hurricane Melissa</h4>
                   <p className="text-sm text-foreground/70 flex gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     Building telemedicine nodes, diagnostic clinics, and community pods
                   </p>
                   <p className="text-sm text-foreground/70 flex gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     Running medical missions with JDF, BDF, UWI, and international doctors
                   </p>
                   <p className="text-sm text-foreground/70 flex gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     Supporting small businesses and youth talent programs
                   </p>
                 </a>
@@ -439,6 +440,8 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        <GrantSection />
 
         {/* About/Charter Section */}
         <section className="py-16 px-4 bg-white">
@@ -491,7 +494,7 @@ export default function Home() {
         </section>
 
                 {/* Three Core Areas Section */}
-        <section className="h-screen flex items-center px-4 bg-gradient-to-br from-primary via-primary/95 to-blue-600">
+        <section className="h-screen flex items-center px-4 bg-linear-to-br from-primary via-primary/95 to-blue-600">
           <div className="max-w-7xl mx-auto w-full h-full py-8 flex flex-col">
             <div className="mb-6">
               <h3 className="text-4xl font-bold text-primary-foreground mb-3">
@@ -522,7 +525,7 @@ export default function Home() {
                     className="p-6 bg-card hover:shadow-lg transition-shadow border border-border"
                   >
                     <div className="flex items-start gap-4">
-                      <Icon className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                      <Icon className="w-8 h-8 text-primary shrink-0 mt-1" />
                       <div className="flex-1">
                         <h3 className="text-base font-semibold mb-1">
                           {area.title}
@@ -660,7 +663,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-20 px-4 bg-gradient-to-br from-primary via-primary/95 to-blue-600 text-primary-foreground">
+        <section className="py-20 px-4 bg-linear-to-br from-primary via-primary/95 to-blue-600 text-primary-foreground">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl font-bold mb-6">
               Ready to Make an Impact?
