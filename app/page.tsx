@@ -289,6 +289,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-10">
               <h2 className="text-4xl  font-bold mb-4 text-foreground">
+              <h2 className="text-4xl  font-bold mb-4 text-foreground">
                 Current Focus: Jamaica Relief
               </h2>
               <p className="text-lg leading-relaxed text-gray-700 mb-0">
@@ -326,9 +327,11 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
                 <div className="relative w-48 h-48 mx-auto bg-white rounded-full p-2 shadow-lg sm:flex hidden">
+                <div className="relative w-48 h-48 mx-auto bg-white rounded-full p-2 shadow-lg sm:flex hidden">
                   <img
                     src="/images/hurricane-relief-3.jpeg"
                     alt="Relief worker coordinating nighttime operations"
+                    className="w-full h-full rounded-full object-cover "
                     className="w-full h-full rounded-full object-cover "
                   />
                 </div>
@@ -336,9 +339,11 @@ export default function Home() {
               <div className="relative group">
                 <div className="absolute inset-0 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
                 <div className="relative w-48 h-48 mx-auto bg-white rounded-full p-2 shadow-lg sm:flex hidden">
+                <div className="relative w-48 h-48 mx-auto bg-white rounded-full p-2 shadow-lg sm:flex hidden">
                   <img
                     src="/telemedicine-1.png"
                     alt="Telemedicine consultation with patient"
+                    className="w-full h-full rounded-full object-cover sm:flex hidden"
                     className="w-full h-full rounded-full object-cover sm:flex hidden"
                   />
                 </div>

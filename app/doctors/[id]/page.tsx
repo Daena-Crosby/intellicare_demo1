@@ -140,49 +140,67 @@ export default async function DoctorDetailPage({
                   </div>
                 </div>
 
-                  <div className="space-y-3 border-t border-slate-700 pt-4">
-                    <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-400">
-                      About
-                    </h3>
-                    <div className="space-y-3 text-sm">
-                      <div className="flex items-start gap-3">
-                        <Calendar className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
-                        <div>
-                          <div className="text-slate-500">Experience</div>
-                          <div className="text-slate-200">
-                            {doctor.experience_years} years
-                          </div>
+                <div className="space-y-3 border-t border-slate-700 pt-4">
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-400">
+                    About
+                  </h3>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex items-start gap-3">
+                      <Calendar className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
+                      <div>
+                        <div className="text-slate-500">Experience</div>
+                        <div className="text-slate-200">
+                          {doctor.experience_years} years
                         </div>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
-                        <div>
-                          <div className="text-slate-500">Location</div>
-                          <div className="text-slate-200">{doctor.country}</div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
+                      <div>
+                        <div className="text-slate-500">Location</div>
+                        <div className="text-slate-200">{doctor.country}</div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Award className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
+                      <div>
+                        <div className="text-slate-500">Specialty</div>
+                        <div className="text-slate-200">
+                          {doctor.medical_role}
                         </div>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <Award className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
-                        <div>
-                          <div className="text-slate-500">Specialty</div>
-                          <div className="text-slate-200">
-                            {doctor.medical_role}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <Languages className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
-                        <div>
-                          <div className="text-slate-500">Languages</div>
-                          <div className="text-slate-200">
-                            {profile?.languages ? profile.languages.join(", ") : "Not specified"}
-                          </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Languages className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
+                      <div>
+                        <div className="text-slate-500">Languages</div>
+                        <div className="text-slate-200">
+                          {profile?.languages
+                            ? profile.languages.join(", ")
+                            : "Not specified"}
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
               </CardContent>
             </Card>
+
+            <div className="lg:hidden">              
+              {profile?.bio && (
+                <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+                  <CardContent className="p-6">
+                    <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
+                      <User className="h-6 w-6 text-blue-200" />
+                      Bio
+                    </h2>
+                    <p className="text-pretty text-base leading-relaxed text-slate-300">
+                      {profile.bio}
+                    </p>
+                  </CardContent>
+                </Card>
+              )}
+              </div>  
 
             {/* Core Values Card */}
             {profile?.core_values && (
@@ -194,21 +212,6 @@ export default async function DoctorDetailPage({
                   </h2>
                   <p className="text-pretty text-sm leading-relaxed text-slate-300">
                     {profile.core_values}
-                  </p>
-                </CardContent>
-              </Card>
-            )}
-
-            {/* Professional Journey */}
-            {profile?.professional_experience && (
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
-                <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
-                    <Briefcase className="h-6 w-6 text-blue-200" />
-                    Professional Journey
-                  </h2>
-                  <p className="text-pretty text-base leading-relaxed text-slate-300">
-                    {profile.professional_experience}
                   </p>
                 </CardContent>
               </Card>
@@ -247,46 +250,62 @@ export default async function DoctorDetailPage({
 
           {/* Right Content Area */}
           <div className="space-y-6">
-            {profile?.bio && (
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
-                <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
-                    <User className="h-6 w-6 text-blue-200" />
-                    Bio
-                  </h2>
-                  <p className="text-pretty text-base leading-relaxed text-slate-300">
-                    {profile.bio}
-                  </p>
-                </CardContent>
-              </Card>
-            )}
-            {/* Goals */}
-            <div className="grid gap-6 ">
-              {profile?.goals && (
-                <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur lg:col-span-2">
+            <div className="hidden lg:block">
+              {profile?.bio && (
+                <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
                   <CardContent className="p-6">
                     <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
-                      <Target className="h-6 w-6 text-blue-200" />
-                      Goals
+                      <User className="h-6 w-6 text-blue-200" />
+                      Bio
                     </h2>
-                    <ul className="space-y-2 text-sm text-slate-300">
-                      {profile.goals
-                        .split(".")
-                        .filter(Boolean)
-                        .map((goal, idx) => (
-                          <li key={idx} className="flex items-start gap-2">
-                            <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-white" />
-                            <span className="text-pretty">{goal.trim()}.</span>
-                          </li>
-                        ))}
-                    </ul>
+                    <p className="text-pretty text-base leading-relaxed text-slate-300">
+                      {profile.bio}
+                    </p>
                   </CardContent>
                 </Card>
               )}
             </div>
+            {/* Goals */}
+            <div className="grid gap-6 ">
+              {profile?.goals &&
+                (() => {
+                  const goals = profile.goals
+                    .split(".")
+                    .filter(Boolean)
+                    .map((g) => g.trim());
+
+                  return (
+                    <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur lg:col-span-2">
+                      <CardContent className="p-6">
+                        <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
+                          <Target className="h-6 w-6 text-blue-200" />
+                          Goals
+                        </h2>
+
+                        {goals.length === 1 ? (
+                          // ✅ One Goal → No bullet
+                          <p className="text-sm text-slate-300 text-pretty">
+                            {goals[0]}.
+                          </p>
+                        ) : (
+                          // ✅ Multiple Goals → Bulleted list
+                          <ul className="space-y-2 text-sm text-slate-300">
+                            {goals.map((goal, idx) => (
+                              <li key={idx} className="flex items-start gap-2">
+                                <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-white" />
+                                <span className="text-pretty">{goal}.</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </CardContent>
+                    </Card>
+                  );
+                })()}
+            </div>
 
             {/* Motivation */}
-            <div className="grid gap-6 ">
+            {/* <div className="grid gap-6 ">
               <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
                 <CardContent className="p-6">
                   <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-white">
@@ -371,7 +390,7 @@ export default async function DoctorDetailPage({
                   </CardContent>
                 </Card>
               )}
-            </div>
+            </div> */}
 
             {profile?.education && (
               <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur lg:col-span-2">
@@ -393,6 +412,21 @@ export default async function DoctorDetailPage({
                         </li>
                       ))}
                   </ul>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Professional Journey */}
+            {profile?.professional_experience && (
+              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+                <CardContent className="p-6">
+                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
+                    <Briefcase className="h-6 w-6 text-blue-200" />
+                    Professional Journey
+                  </h2>
+                  <p className="text-pretty text-base leading-relaxed text-slate-300">
+                    {profile.professional_experience}
+                  </p>
                 </CardContent>
               </Card>
             )}

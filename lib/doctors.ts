@@ -376,5 +376,136 @@ export const doctorDatabase = {
   transcripts: []
 },
 
+"ramone-williamson": {
+  doctor: {
+    doctor_id: "ramone-williamson",
+    name: "Dr. Ramone A. Williamson",
+    specialty: "Oncology & Orthopedics",
+    country: "Jamaica",
+    medical_role: "Medical Doctor / Orthopedics & Oncology",
+    work_preference: "Both", // Field + Telemedicine (he supports both)
+    availability: "Part-time (varies with clinical schedule)",
+    experience_years: 5,
+    photo_url: "/images/ramone-williamson.jpeg",
+  },
+
+  profile: {
+    bio:
+      "Dr. Ramone A. Williamson is a Jamaican medical doctor specializing in orthopedics and oncology, with five years of clinical experience. His work spans emergency care of orthopedic trauma, cancer-related bone disease, and multidisciplinary oncology management. Known for his calm presence and analytical approach, he provides patient-centered care informed by both hospital experience and academic research.",
+
+    education:
+      "Bachelor of Medicine and Bachelor of Surgery (MBBS) from The University of the West Indies, Mona. Completed internship and subsequent medical rotations in oncology and orthopedics. Authored over 15 peer-reviewed oncology research publications.",
+
+    certifications: [
+      "Licensed Medical Doctor, Jamaica",
+      "Specialized clinical experience in Orthopedics",
+      "Oncology research contributor with 15+ academic publications",
+      "Emergency and acute care clinical training"
+    ],
+
+    languages: ["English"],
+
+    personal_story:
+      "Growing up in Jamaica, Dr. Williamson was drawn to medicine as a way to create meaningful impact in communities with limited resources. During his medical training, he gravitated toward oncology because of the depth of human connection involved in caring for cancer patients. His later clinical work in orthopedics broadened his scope, giving him the ability to treat traumatic injuries, fractures, and bone diseases—including cancer-related orthopedic conditions.",
+
+    academic_journey:
+      "Throughout medical school and clinical training, Dr. Williamson developed a strong interest in oncology research, resulting in more than 15 published papers across cancer care, epidemiology, and treatment outcomes. His work straddles both oncology and orthopedics, giving him a unique dual perspective on patient care, especially for individuals whose orthopedic issues stem from or overlap with cancer diagnoses.",
+
+    professional_experience:
+      "With five years of clinical experience, Dr. Williamson has served in hospital settings managing acute orthopedic trauma, fractures, emergency cases, and soft tissue injuries. He also works with oncology patients, supporting diagnosis, clinical management, and follow-up care. His blended expertise allows him to provide holistic guidance to patients with complex musculoskeletal conditions, including those impacted by cancer.",
+
+    memorable_case:
+      "Dr. Williamson recalls multiple cases involving patients with advanced cancer who developed severe orthopedic complications. Providing relief, triage, and compassionate counseling for families during these difficult situations has shaped his understanding of dignity in care and the emotional weight of patient support.",
+
+    strengths:
+      "Strong foundation in oncology research and clinical oncology support. Skilled in orthopedic trauma assessment, fracture management, and musculoskeletal diagnostics. Excellent communicator, calm under pressure, and capable of providing empathetic guidance to patients and families.",
+
+    areas_for_growth:
+      "Continuing to develop procedural orthopedics skills and expanding capabilities in telemedicine for remote patient monitoring. Seeking opportunities to participate in global orthopedic-oncology partnerships and further research collaborations.",
+
+    personality:
+      "Calm, analytical, compassionate, and deeply patient-focused. Balances scientific rigor with emotional sensitivity, particularly in oncology care. Values teamwork, humility, and continuous learning.",
+
+    core_values:
+      "Patient dignity, evidence-based medicine, compassionate communication, lifelong learning, family-centered care, and service to underserved communities.",
+
+    values:
+      "Grounded in the belief that every patient deserves to be seen, heard, and supported throughout the entire healing process—physically, emotionally, and socially.",
+
+    goals:
+      "To deepen expertise in orthopedic surgery and oncology. To expand clinical reach through telemedicine. To continue publishing research that improves cancer outcomes. To serve in relief missions and support communities facing medical crises.",
+
+    hobbies:
+      "Reading, academic research, mentorship, fitness, and volunteering in community health initiatives.",
+  },
+
+  transcripts: [],
+},
+
+"hajauni-parsons": {
+  doctor: {
+    doctor_id: "hajauni-parsons",
+    name: "Dr. Hajauni Parsons",
+    specialty: "General Medicine",
+    country: "Jamaica",
+    medical_role: "Medical Doctor",
+    work_preference: "Both",
+    availability: "Not specified",
+    experience_years: 2,
+    photo_url: "/images/hajauni-parsons.jpeg",
+  },
+
+  profile: {
+    bio: "Dr. Hajauni Parsons is a Jamaican medical doctor with experience in both hospital and community clinical settings. Currently working at Spanish Town Hospital, he manages a wide range of general medical cases with a hands-on, practical approach to patient care. He is deeply motivated by service, skill development, and the opportunity to grow into a more specialized clinical role in the future.",
+
+    education:
+      "Bachelor of Medicine. Bachelor of Surgery (MBBS). followed by two years of practical clinical experience across various hospital departments.",
+
+    certifications: [
+      "Medical Doctor (Registered)",
+      "Clinical experience across General Medicine and Emergency rotations",
+      "Procedural skills development within hospital settings"
+    ],
+
+    languages: ["English"],
+
+    personal_story:
+      "Growing up in Jamaica, Dr. Parsons built a strong desire to serve his community and advance his medical skills. He thrives in hands-on environments and values being part of a team that provides immediate and meaningful impact. His dedication to patient care comes from a desire to support others during moments of crisis and uncertainty, especially in underserved communities.",
+
+    academic_journey:
+      "After graduating from medical school, Dr. Parsons entered clinical practice and has since worked for two years in general hospital settings. He has gained early exposure to emergency care, general medicine, and procedural work, and continues to build his clinical judgment and hands-on skill set. His long-term aspiration is to pursue advanced training in surgery, particularly general surgery with potential interest in cardiothoracic care.",
+
+    professional_experience:
+      "Currently serving at Spanish Town Hospital, Dr. Parsons manages general medical patients, coordinates care with multidisciplinary teams, and assists with procedural and emergency tasks. His work emphasizes adaptability, critical thinking, and the ability to stabilize, assess, and manage a wide range of conditions in a resource-constrained environment.",
+
+    memorable_case:
+      "One of his most meaningful clinical moments was supporting patients and families during emotionally difficult circumstances. These experiences strengthened his desire to provide compassionate, grounded, skillful care while maintaining a calm presence in challenging situations.",
+
+    strengths:
+      "Strong clinical adaptability, growing procedural competence, willingness to take initiative, clear communication, team-oriented mindset, and a natural ability to stay calm under pressure. He is committed to learning and motivated to improve his skill set continuously.",
+
+    areas_for_growth:
+      "Further development of surgical proficiency, increased exposure to advanced medical procedures, and strengthening his clinical decision-making through mentorship and specialty training.",
+
+    personality:
+      "Calm, thoughtful, hands-on, and service-oriented. Dr. Parsons is motivated by purpose, teamwork, and growth. He values honesty, reliability, and consistency in both personal and professional environments.",
+
+    core_values:
+      "Service, discipline, continuous improvement, compassion, teamwork, and dedication to community impact.",
+
+    values:
+      "He believes deeply in helping others through direct action and sees medicine as both a responsibility and an opportunity to uplift vulnerable communities.",
+
+    goals:
+      "To continue building clinical experience. To pursue advanced surgical training in the future. To contribute to Jamaica’s healthcare system and expand his practical skill set.",
+
+    hobbies:
+      "Working out, learning new procedures, spending time with friends, exploring new interests, and maintaining a balanced lifestyle.",
+  },
+
+  transcripts: [],
+},
+
+
 
 }
