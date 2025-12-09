@@ -55,10 +55,10 @@ export const doctorDatabase = {
   doctor: {
     doctor_id: "abigail-cameron",
     name: "Dr. Abigail Cameron",
-    specialty: "General Medicine / Family Medicine (early-career)",
+    specialty: "General Medicine",
     country: "Jamaica",
     medical_role: "General Practitioner / Junior Medical Officer",
-    work_preference: "Both (Public + Private)",
+    work_preference: " Family Medicine (early-career)",
     availability: "Varies — works across 4–5 practices weekly",
     experience_years: 4,
     photo_url: "/images/abigail-cameron.jpeg" // <-- You can replace or upload later
@@ -122,7 +122,7 @@ export const doctorDatabase = {
     specialty: "Emergency Medicine",
     country: "United States",
     medical_role: "Emergency Medicine Physician",
-    work_preference: "Both (Clinical + Global Health)",
+    work_preference: "Global relief",
     availability: "15–18 shifts/month, mostly nights",
     experience_years: 10,
     photo_url: "/images/angie-schafer.jpeg" // Replace when you get a real photo
@@ -188,7 +188,7 @@ export const doctorDatabase = {
     specialty: "General Medicine / Future OBGYN",
     country: "Jamaica",
     medical_role: "Medical Doctor",
-    work_preference: "Both (Local Missions + Potential International Relief)",
+    work_preference: "Obstetrics Gynocology",
     availability: "Availability TBD",
     experience_years: 3,
     photo_url: "/images/tarek-simpson.jpeg"
@@ -249,10 +249,10 @@ export const doctorDatabase = {
   doctor: {
     doctor_id: "david-clarke",
     name: "Lt. Colonel David Clarke",
-    specialty: "Emergency Medical Coordination / Field Hospital Leadership",
+    specialty: "Emergency Medical Coordination",
     country: "Barbados",
     medical_role: "Force Medical Liaison Officer / Contingent Commander, Barbados Defence Force",
-    work_preference: "Field Deployment & Medical Systems Leadership",
+    work_preference: "Field Hospital",
     availability: "Mission-dependent",
     experience_years: 37, // based on 33–37 years logistics career + 5 years military return
     photo_url: "/images/david-clarke2.jpeg"
@@ -316,10 +316,10 @@ export const doctorDatabase = {
   doctor: {
     doctor_id: "owen-waugh",
     name: "Dr. Owen Waugh",
-    specialty: "General Medicine / Obstetrics & Gynecology and Pediatrics",
+    specialty: "General Medicine / Obstetrics & Gynecology",
     country: "Jamaica",
     medical_role: "Medical Officer, Linstead Hospital",
-    work_preference: "Both",
+    work_preference: "Oncology & Orthodontics",
     availability: "Flexible (short-staffed but able to make time)",
     experience_years: 3,
     photo_url: "/images/owen-waugh.jpeg"
