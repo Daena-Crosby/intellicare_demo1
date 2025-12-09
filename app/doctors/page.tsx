@@ -129,9 +129,12 @@ export default function DoctorsPage() {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold mb-4">Our Healthcare Professionals</h1>
+            <h1 className="text-4xl font-bold mb-4">
+              Our Healthcare Professionals
+            </h1>
             <p className="text-lg text-muted-foreground">
-              Meet the dedicated healthcare experts providing care through Intellibus Care Foundation
+              Meet the dedicated healthcare experts providing care through
+              Intellibus Care Foundation
             </p>
           </div>
 
@@ -146,8 +149,14 @@ export default function DoctorsPage() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium mb-2">Specialty</label>
-              <Select value={specialtyFilter} onValueChange={setSpecialtyFilter} className="cursor-pointer">
+              <label className="block text-sm font-medium mb-2">
+                Specialty
+              </label>
+              <Select
+                value={specialtyFilter}
+                onValueChange={setSpecialtyFilter}
+                className="cursor-pointer"
+              >
                 <SelectTrigger className="cursor-pointer">
                   <SelectValue />
                 </SelectTrigger>
@@ -203,24 +212,36 @@ export default function DoctorsPage() {
                       {/* Content Section */}
                       <div className="p-5 flex flex-col flex-1 space-y-3">
                         <div>
-                          <h3 className="text-lg font-bold text-foreground">{doctor.name}</h3>
-                          <p className="text-sm text-muted-foreground">{doctor.medicalRole}</p>
+                          <h3 className="text-lg font-bold text-foreground">
+                            {doctor.name}
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            {doctor.medicalRole}
+                          </p>
                         </div>
 
                         {/* Badges - Specialty (Blue), Work Preference (Black), Country (Grey) */}
                         <div className="flex gap-2 flex-wrap">
-                          <Badge className="px-3 py-1 text-xs bg-blue-600 text-white">{doctor.specialty}</Badge>
+                          {doctor.specialty && (
+                            <Badge className="px-3 py-1 text-xs bg-blue-600 text-white">
+                              {doctor.specialty}
+                            </Badge>
+                          )}
 
                           {doctor.workPreference === "Both" ? (
                             <>
-                              <Badge className="px-3 py-1 text-xs bg-slate-900 text-white">Telemedicine</Badge>
-                              <Badge className="px-3 py-1 text-xs bg-slate-900 text-white">Medical care</Badge>
+                              <Badge className="px-3 py-1 text-xs bg-slate-900 text-white">
+                                Telemedicine
+                              </Badge>
+                              <Badge className="px-3 py-1 text-xs bg-slate-900 text-white">
+                                Medical care
+                              </Badge>
                             </>
                           ) : (
                             <Badge
                               className={`px-3 py-1 text-xs ${getPreferenceColor(doctor.workPreference).bg} ${getPreferenceColor(doctor.workPreference).text}`}
                             >
-                              {doctor.workPreference} 
+                              {doctor.workPreference}
                             </Badge>
                           )}
 
@@ -232,7 +253,9 @@ export default function DoctorsPage() {
                           </Badge>
                         </div>
 
-                        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">{doctor.bio}</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed line-clamp-2">
+                          {doctor.bio}
+                        </p>
                       </div>
                     </Card>
                   </Link>
@@ -250,5 +273,5 @@ export default function DoctorsPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

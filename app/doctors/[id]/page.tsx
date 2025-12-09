@@ -119,7 +119,7 @@ export default async function DoctorDetailPage({
           {/* Left Sidebar - Photo & Basic Info */}
           <div className="space-y-6">
             {/* Profile Photo Card */}
-            <Card className="overflow-hidden border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+            <Card className="overflow-hidden border-slate-700 bg-primary shadow-lg backdrop-blur">
               <CardContent className="p-6">
                 <div className="grid grid-cols-1 gap-4 mb-6">
                   {/* 1st Profile Photo Card */}
@@ -188,13 +188,13 @@ export default async function DoctorDetailPage({
 
             <div className="lg:hidden">              
               {profile?.bio && (
-                <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+                <Card className="border-slate-700 bg-white shadow-lg backdrop-blur">
                   <CardContent className="p-6">
-                    <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
-                      <User className="h-6 w-6 text-blue-200" />
+                    <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-black">
+                      <User className="h-6 w-6 text-primary" />
                       Bio
                     </h2>
-                    <p className="text-pretty text-base leading-relaxed text-slate-300">
+                    <p className="text-pretty text-base leading-relaxed text-primary">
                       {profile.bio}
                     </p>
                   </CardContent>
@@ -204,13 +204,13 @@ export default async function DoctorDetailPage({
 
             {/* Core Values Card */}
             {profile?.core_values && (
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+              <Card className="border-slate-700 bg-white shadow-lg backdrop-blur">
                 <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-white">
-                    <Shield className="h-5 w-5 text-blue-200" />
+                  <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-black">
+                    <Shield className="h-5 w-5 text-primary" />
                     Core Values
                   </h2>
-                  <p className="text-pretty text-sm leading-relaxed text-slate-300">
+                  <p className="text-pretty text-sm leading-relaxed text-primary">
                     {profile.core_values}
                   </p>
                 </CardContent>
@@ -219,13 +219,13 @@ export default async function DoctorDetailPage({
 
             {/* Personality Card */}
             {profile?.personality && (
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+              <Card className="border-slate-700 bg-primary shadow-lg backdrop-blur">
                 <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-white">
-                    <Zap className="h-5 w-5 text-blue-200" />
+                  <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-black">
+                    <Zap className="h-5 w-5 text-white" />
                     Personality
                   </h2>
-                  <p className="text-pretty text-sm leading-relaxed text-slate-300">
+                  <p className="text-pretty text-sm leading-relaxed text-white">
                     {profile.personality}
                   </p>
                 </CardContent>
@@ -234,13 +234,13 @@ export default async function DoctorDetailPage({
 
             {/* Hobbies */}
             {profile?.hobbies && (
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+              <Card className="border-slate-700 bg-white shadow-lg backdrop-blur">
                 <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-white">
-                    <Heart className="h-6 w-6 text-blue-200" />
+                  <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-black">
+                    <Heart className="h-6 w-6 text-primary" />
                     Hobbies & Interests
                   </h2>
-                  <p className="text-pretty text-sm leading-relaxed text-slate-300">
+                  <p className="text-pretty text-sm leading-relaxed text-primary">
                     {profile.hobbies}
                   </p>
                 </CardContent>
@@ -252,9 +252,9 @@ export default async function DoctorDetailPage({
           <div className="space-y-6">
             <div className="hidden lg:block">
               {profile?.bio && (
-                <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+                <Card className="border-slate-700 bg-primary shadow-lg backdrop-blur">
                   <CardContent className="p-6">
-                    <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
+                    <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-black">
                       <User className="h-6 w-6 text-blue-200" />
                       Bio
                     </h2>
@@ -277,23 +277,23 @@ export default async function DoctorDetailPage({
                   return (
                     <Card className="border-slate-700 bg-white shadow-lg backdrop-blur lg:col-span-2">
                       <CardContent className="p-6">
-                        <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-slate-800/50">
-                          <Target className="h-6 w-6 text-blue-200" />
+                        <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-black">
+                          <Target className="h-6 w-6 text-primary" />
                           Goals
                         </h2>
 
                         {goals.length === 1 ? (
                           // ✅ One Goal → No bullet
-                          <p className="text-sm text-slate-300 text-pretty">
+                          <p className="text-sm  text-primary">
                             {goals[0]}.
                           </p>
                         ) : (
                           // ✅ Multiple Goals → Bulleted list
-                          <ul className="space-y-2 text-sm text-slate-300">
+                          <ul className="space-y-2 text-sm text-primary">
                             {goals.map((goal, idx) => (
                               <li key={idx} className="flex items-start gap-2">
-                                <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-white" />
-                                <span className="text-pretty">{goal}.</span>
+                                <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                                <span className="text-">{goal}.</span>
                               </li>
                             ))}
                           </ul>
@@ -393,10 +393,10 @@ export default async function DoctorDetailPage({
             </div> */}
 
             {profile?.education && (
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur lg:col-span-2">
+              <Card className="border-slate-700 bg-white shadow-lg backdrop-blur lg:col-span-2">
                 <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
-                    <BookOpen className="h-6 w-6 text-blue-200" />
+                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-black">
+                    <BookOpen className="h-6 w-6 text-primary" />
                     Education
                   </h2>
                   <ul className="space-y-2 text-sm text-slate-300">
@@ -405,8 +405,8 @@ export default async function DoctorDetailPage({
                       .filter(Boolean)
                       .map((education, idx) => (
                         <li key={idx} className="flex items-start gap-2">
-                          <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-white" />
-                          <span className="text-pretty">
+                          <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                          <span className="text-primary">
                             {education.trim()}.
                           </span>
                         </li>
@@ -418,13 +418,13 @@ export default async function DoctorDetailPage({
 
             {/* Professional Journey */}
             {profile?.professional_experience && (
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+              <Card className="border-slate-700 bg-primary shadow-lg backdrop-blur">
                 <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
-                    <Briefcase className="h-6 w-6 text-blue-200" />
+                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-black">
+                    <Briefcase className="h-6 w-6 text-white" />
                     Professional Journey
                   </h2>
-                  <p className="text-pretty text-base leading-relaxed text-slate-300">
+                  <p className="text-pretty text-base leading-relaxed text-white">
                     {profile.professional_experience}
                   </p>
                 </CardContent>
@@ -495,13 +495,13 @@ export default async function DoctorDetailPage({
 
             {/* Personal Story */}
             {profile?.personal_story && (
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+              <Card className="border-slate-700 bg-white shadow-lg backdrop-blur">
                 <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
-                    <Heart className="h-6 w-6 text-blue-200" />
+                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-black">
+                    <Heart className="h-6 w-6 text-primary" />
                     Personal Story
                   </h2>
-                  <p className="text-pretty text-base leading-relaxed text-slate-300">
+                  <p className="text-pretty text-base leading-relaxed text-primary">
                     {profile.personal_story}
                   </p>
                 </CardContent>
@@ -510,13 +510,13 @@ export default async function DoctorDetailPage({
 
             {/* Memorable Case */}
             {profile?.memorable_case && (
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
+              <Card className="border-slate-700 bg-primary shadow-lg backdrop-blur">
                 <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
-                    <Heart className="h-6 w-6 text-blue-200" />
+                  <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-black">
+                    <Heart className="h-6 w-6 text-white" />
                     Memorable Experience
                   </h2>
-                  <p className="text-pretty text-base leading-relaxed text-slate-300">
+                  <p className="text-pretty text-base leading-relaxed text-white">
                     {profile.memorable_case}
                   </p>
                 </CardContent>
