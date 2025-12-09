@@ -2277,6 +2277,10 @@
     background-color: var(--color-slate-300);
   }
 
+  .bg-slate-800 {
+    background-color: var(--color-slate-800);
+  }
+
   .bg-slate-800\/50 {
     background-color: #1d293d80;
   }
@@ -2823,6 +2827,10 @@
     color: var(--background);
   }
 
+  .text-black {
+    color: var(--color-black);
+  }
+
   .text-blue-50 {
     color: var(--color-blue-50);
   }
@@ -3007,6 +3015,20 @@
 
   .text-slate-700 {
     color: var(--color-slate-700);
+  }
+
+  .text-slate-800 {
+    color: var(--color-slate-800);
+  }
+
+  .text-slate-800\/50 {
+    color: #1d293d80;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-slate-800\/50 {
+      color: color-mix(in oklab, var(--color-slate-800) 50%, transparent);
+    }
   }
 
   .text-slate-900 {

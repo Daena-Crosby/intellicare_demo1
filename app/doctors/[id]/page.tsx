@@ -275,9 +275,9 @@ export default async function DoctorDetailPage({
                     .map((g) => g.trim());
 
                   return (
-                    <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur lg:col-span-2">
+                    <Card className="border-slate-700 bg-white shadow-lg backdrop-blur lg:col-span-2">
                       <CardContent className="p-6">
-                        <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-white">
+                        <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-slate-800/50">
                           <Target className="h-6 w-6 text-blue-200" />
                           Goals
                         </h2>
