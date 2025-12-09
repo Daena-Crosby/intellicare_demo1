@@ -200,6 +200,11 @@ export default function Header() {
               Get Started
             </Button>
           </Link>
+          <Link href="/" className="hidden md:block">
+            <Button className="bg-white text-primary hover:bg-gray-300/90">
+              Grants
+            </Button>
+          </Link>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -288,6 +293,11 @@ export default function Header() {
             <Link href="/register" className="mt-2">
               <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
                 Get Started
+              </Button>
+            </Link>
+            <Link href="/" className="mt-0">
+              <Button className="w-full bg-gray-200 text-black hover:bg-gray-300/90">
+                Grants
               </Button>
             </Link>
           </nav>
