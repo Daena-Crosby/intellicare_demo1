@@ -55,7 +55,7 @@ export const doctorDatabase = {
   doctor: {
     doctor_id: "abigail-cameron",
     name: "Dr. Abigail Cameron",
-    specialty: "General Medicine",
+    specialty: "General Medicine .Genral",
     country: "Jamaica",
     medical_role: "General Practitioner / Junior Medical Officer",
     work_preference: " Family Medicine (early-career)",
