@@ -55,7 +55,7 @@ export const doctorDatabase = {
   doctor: {
     doctor_id: "abigail-cameron",
     name: "Dr. Abigail Cameron",
-    specialty: "General Medicine .Genral",
+    specialty: "General Medicine",
     country: "Jamaica",
     medical_role: "General Practitioner / Junior Medical Officer",
     work_preference: " Family Medicine (early-career)",
@@ -383,7 +383,7 @@ export const doctorDatabase = {
     specialty: "Oncology & Orthopedics",
     country: "Jamaica",
     medical_role: "Medical Doctor / Orthopedics & Oncology",
-    work_preference: "Both", // Field + Telemedicine (he supports both)
+    // work_preference: "Both", // Field + Telemedicine (he supports both)
     availability: "Part-time (varies with clinical schedule)",
     experience_years: 5,
     photo_url: "/images/ramone-williamson.jpeg",
@@ -449,7 +449,7 @@ export const doctorDatabase = {
     specialty: "General Medicine",
     country: "Jamaica",
     medical_role: "Medical Doctor",
-    work_preference: "Both",
+    // work_preference: "Both",
     availability: "Not specified",
     experience_years: 2,
     photo_url: "/images/hajauni-parsons.jpeg",
@@ -504,6 +504,137 @@ export const doctorDatabase = {
   },
 
   transcripts: [],
+},
+
+"abigail-ogere": {
+  doctor: {
+    doctor_id: "abigail-ogere",
+    name: "Dr. Abigail O’Gere",
+    specialty: "General Medicine",
+    country: "Jamaica",
+    medical_role: "General Medical Practitioner",
+    // work_preference: "Both",
+    availability: "Not specified",
+    experience_years: 2, // Adjust if transcript indicates otherwise
+    photo_url: "/images/abigail-ogere.jpeg",
+  },
+
+  profile: {
+    bio: "Dr. Abigail O’Gere is a Jamaican medical doctor practicing general medicine with a strong long-term interest in internal medicine. She currently operates in private practice, where she provides patient-centered medical care while steadily expanding her clinical skills and experience. Driven, compassionate, and hardworking, she integrates her knowledge with practical experience to support patients across a wide range of medical concerns.",
+
+    education:
+      "Bachelor of Medicine, Bachelor of Surgery (MBBS). Completed two years of clinical experience in internal medicine and general medicine rotations.",
+
+    certifications: [
+      "Registered Medical Doctor (Jamaica)",
+      "Clinical experience in Internal Medicine",
+      "General Medicine Practitioner",
+      "Training in patient assessment and chronic disease management"
+    ],
+
+    languages: ["English"],
+
+    personal_story:
+      "Dr. O’Gere describes herself as a simple, hard-working, and straightforward individual who loves medicine and is dedicated to improving her clinical expertise. She values meaningful work, personal growth, and being able to genuinely help patients. Family remains extremely important to her, though she is careful not to let it overwhelm her or distract from her goals. She believes strongly in balance, authenticity, and maintaining a positive environment.",
+
+    academic_journey:
+      "Her medical path began with strong academic performance and a desire to pursue internal medicine. Following medical school, she gained valuable experience working in both public and private healthcare settings. She has developed a strong inclination toward internal medicine, where she hopes to further specialize. Her journey reflects consistent growth, discipline, and the drive to refine her clinical skills and expand her medical knowledge.",
+
+    professional_experience:
+      "Dr. O’Gere currently works in private practice, providing general medical consultations, managing chronic illnesses, and addressing acute patient needs. She also has meaningful experience in internal medicine, where she strengthened her diagnostic reasoning, patient communication, and clinical decision-making. Her work is defined by reliability, compassion, and a commitment to improving health outcomes in her community.",
+
+    memorable_case:
+      "Some of her most memorable experiences involve helping patients during moments of vulnerability. These encounters reaffirm her passion for medicine and her desire to grow into a specialist who can support more complex medical needs.",
+
+    strengths:
+      "Strong work ethic, disciplined approach to patient care, thoughtful and structured communication, ability to learn quickly, and a calm, grounded personality that supports patient comfort and trust.",
+
+    areas_for_growth:
+      "Gaining deeper experience in internal medicine, expanding procedural competence, increasing confidence in high-acuity environments, and strengthening specialty-specific clinical judgment.",
+
+    personality:
+      "Independent, determined, straightforward, and introspective. She values structure, personal growth, and meaningful connections. While she enjoys companionship, she is intentional about creating a peaceful environment around her. She prefers authenticity over pretense and takes pride in staying true to who she is.",
+
+    core_values:
+      "Hard work, discipline, honesty, authenticity, compassion, calmness, independence, and continuous self-improvement.",
+
+    values:
+      "She believes in balancing personal life with her dedication to medicine, remaining genuine, and creating meaningful relationships without compromising her sense of peace.",
+
+    goals:
+      "To continue developing as a general practitioner. To gain further internal medicine experience. To eventually specialize in internal medicine and strengthen her clinical and diagnostic expertise.",
+
+    hobbies:
+      "Reading, self-reflection, learning new skills, spending time with loved ones, and enjoying quiet, relaxing environments.",
+  },
+
+  transcripts: [],
+},
+
+"jenny-rakitima": {
+  doctor: {
+    doctor_id: "jenny-rakitima",
+    name: "Dr. Jenny Rakitima",
+    specialty: "Internal Medicine",
+    country: "United States",
+    medical_role: "Internal Medicine Physician",
+    // work_preference: "Both", 
+    availability: "Hospital-based, inpatient schedule",
+    experience_years: 7, 
+    photo_url: "/images/jenny-rakitima.jpeg"
+  },
+
+  profile: {
+    bio:
+      "Internal Medicine physician with extensive inpatient experience across multiple states and hospital systems. Dr. Jenny Rakitima is known for her compassionate approach, clinical precision, and commitment to high-quality patient care in fast-paced hospital environments. She completed her residency in Internal Medicine at NYU and has developed a reputation for strong diagnostic ability, team collaboration, and patient advocacy.",
+
+    education:
+      "Doctor of Medicine (MD). Internal Medicine Residency at New York University (NYU).",
+
+    certifications: [
+      "Board Eligible in Internal Medicine",
+      "Advanced training across multiple internal medicine subspecialties",
+      "Experienced inpatient hospitalist",
+      "Resident educator and clinical mentor"
+    ],
+
+    languages: ["English"],
+
+    personal_story:
+      "Growing up as the child of immigrant parents who modeled humility, integrity, and care for others, Dr. Rakitima developed a deep appreciation for meaningful work and service. Medicine offered her the opportunity to blend intellectual challenge with impactful human connection. Her journey through training and hospital practice strengthened her belief in equitable care and the importance of compassionate presence in moments of crisis.",
+
+    academic_journey:
+      "After earning her medical degree, Dr. Rakitima completed her Internal Medicine residency at New York University, rotating through diverse hospitals across New York City. Her training exposed her to complex pathology, rapid clinical decision-making, and high-acuity care. She refined her skills in diagnosis, inpatient coordination, and interdisciplinary teamwork. Since residency, she has practiced in multiple states as a full-time inpatient hospitalist.",
+
+    professional_experience:
+      "Dr. Rakitima has worked exclusively in inpatient medicine, managing admissions, emergency evaluations, acute medical conditions, complex comorbidities, and coordination among multidisciplinary teams. Her work spans community hospitals to urban academic centers. She also teaches medical residents during rounds and enjoys shaping clinical reasoning and professionalism in training physicians.",
+
+    memorable_case:
+      "One of her most meaningful experiences involved caring for a critically ill patient who initially appeared stable but rapidly deteriorated. Her ability to remain calm, reassess under pressure, and collaborate effectively with the ICU team helped stabilize the patient. The gratitude expressed by the family reinforced her commitment to compassionate, skilled care.",
+
+    strengths:
+      "Calm under pressure, strong diagnostic reasoning, excellent communication, patient-centered care, interdisciplinary collaboration, adaptability in fast-paced hospital environments, and the ability to handle high-acuity situations with clarity and empathy.",
+
+    areas_for_growth:
+      "Continuing to expand expertise in complex chronic disease management, enhancing procedural skills specific to inpatient care, and exploring opportunities for global health engagement and telemedicine-based support.",
+
+    personality:
+      "Kind, thoughtful, grounded, and service-oriented. She values humility, integrity, and empathy. She is adaptable and level-headed in high-stress environments, enjoys mentoring residents, and consistently seeks to grow both personally and professionally.",
+
+    core_values:
+      "Service, compassion, humility, integrity, lifelong learning, teamwork, and delivering equitable care to all patients regardless of circumstance.",
+
+    values:
+      "A commitment to meaningful work, authentic connection, and providing care with humanity and respect. She believes in showing up fully for patients, families, and colleagues.",
+
+    goals:
+      "To continue excelling as an inpatient physician while exploring opportunities to support global health efforts. To mentor young clinicians and expand her impact beyond the bedside through service-oriented initiatives.",
+
+    hobbies:
+      "Traveling, spending time with family, exploring new places, enjoying good food, and finding small moments of peace and grounding amid busy hospital life."
+  },
+
+  transcripts: []
 },
 
 
