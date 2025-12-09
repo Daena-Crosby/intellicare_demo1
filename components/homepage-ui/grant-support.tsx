@@ -18,7 +18,7 @@ export default function GrantSection() {
 
       {/* Text Section */}
       <div className="space-y-6">
-        <h2 className="text-3xl font-bold text-slate-900 dark:text-white">
+        <h2 className="text-3xl font-bold text-slate-900 dark:text-white text-center">
           Empowering Through Grants
         </h2>
 
@@ -57,7 +57,7 @@ export default function GrantSection() {
         </ul>
 
         {/* Button */}
-        <div className="pt-4">
+        <div className="pt-4 flex justify-center">
           <button className="bg-primary text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 dark:focus:ring-offset-background-dark transition-colors">
             Apply for a Grant
           </button>
