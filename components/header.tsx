@@ -1,32 +1,35 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { useState, useEffect } from "react"
-import { usePathname } from "next/navigation"
-import Image from "next/image"
-import { Menu, X } from "lucide-react"
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Image from "next/image";
+import { Menu, X, ChevronDown, ChevronUp } from "lucide-react";
 
 /**
  * Main navigation header component
  * Shows admin login button or admin panel access based on authentication status
  */
 export default function Header() {
-  const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const pathname = usePathname()
+  const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileAboutOpen, setIsMobileAboutOpen] = useState(false);
+  const pathname = usePathname();
 
   // Check admin authentication status on mount and when pathname changes
   useEffect(() => {
-    const adminSession = localStorage.getItem("admin_session")
-    setIsAdminLoggedIn(adminSession === "true")
-  }, [pathname])
+    const adminSession = localStorage.getItem("admin_session");
+    setIsAdminLoggedIn(adminSession === "true");
+  }, [pathname]);
 
+  // close mobile menus when route changes
   useEffect(() => {
-    setIsMobileMenuOpen(false)
-  }, [pathname])
+    setIsMobileMenuOpen(false);
+    setIsMobileAboutOpen(false);
+  }, [pathname]);
 
-  const isActive = (href: string) => pathname === href
+  const isActive = (href: string) => pathname === href;
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-sm">
@@ -43,12 +46,10 @@ export default function Header() {
             height={32}
             className="h-8 w-auto"
           />
-          <span className="hidden sm:inline text-foreground">
-            Intellibus Care
-          </span>
+          <span className="hidden sm:inline text-foreground">Intellibus Care</span>
         </Link>
 
-        {/* Navigation */}
+        {/* Navigation (desktop) */}
         <nav className="hidden md:flex items-center gap-8">
           <div className="relative group">
             <Link
@@ -65,8 +66,8 @@ export default function Header() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </Link>
-            
-            {/* Dropdown Menu */}
+
+            {/* Desktop dropdown (hover) */}
             <div className="absolute left-0 top-full mt-2 w-72 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
               <div className="p-2">
                 <Link
@@ -83,7 +84,7 @@ export default function Header() {
                     <div className="text-sm text-muted-foreground">Our core purpose and values guiding every action</div>
                   </div>
                 </Link>
-                
+
                 <Link
                   href="/about/our-story"
                   className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
@@ -98,7 +99,7 @@ export default function Header() {
                     <div className="text-sm text-muted-foreground">The journey of Intellibus Care Foundation</div>
                   </div>
                 </Link>
-                
+
                 <Link
                   href="/about/leadership"
                   className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
@@ -113,7 +114,7 @@ export default function Header() {
                     <div className="text-sm text-muted-foreground">Meet our executive team and board of directors</div>
                   </div>
                 </Link>
-                
+
                 <Link
                   href="/about/partners"
                   className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
@@ -155,7 +156,7 @@ export default function Header() {
           >
             Doctors
           </Link>
-          
+
           <Link
             href="/missions"
             aria-current={isActive("/missions") ? "page" : undefined}
@@ -193,17 +194,13 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* CTA Buttons */}
+        {/* CTA Buttons + Mobile toggle */}
         <div className="flex items-center gap-2">
           <Link href="/register" className="hidden md:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Get Started
-            </Button>
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Get Started</Button>
           </Link>
           <Link href="/" className="hidden md:block">
-            <Button className="bg-white text-primary hover:bg-gray-300/90">
-              Grants
-            </Button>
+            <Button className="bg-white text-primary hover:bg-gray-300/90">Grants</Button>
           </Link>
 
           <button
@@ -212,97 +209,114 @@ export default function Header() {
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMobileMenuOpen}
           >
-            {isMobileMenuOpen ? (
-              <X className="h-6 w-6" />
-            ) : (
-              <Menu className="h-6 w-6" />
-            )}
+            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
 
+      {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-border bg-card">
-          <nav className="max-w-6xl mx-auto px-4 py-6 flex flex-col gap-4">
-            <Link
-              href="/about"
-              className={`px-4 py-3 rounded-lg transition-colors ${
-                isActive("/about")
-                  ? "bg-primary text-primary-foreground font-semibold"
-                  : "hover:bg-muted"
-              }`}
-            >
-              About
-            </Link>
+  <div className="md:hidden border-t border-border bg-white">
+    {/* Mobile Side Drawer */}
+<div
+  className={`fixed inset-0 z-50 md:hidden transition-all duration-300 ${
+        isMobileMenuOpen ? "visible bg-white" : "invisible bg-white"
+      }`}
+>
+  {/* Drawer Panel */}
+  <div
+    className={`fixed left-0 top-0 h-full w-72 bg-white border-r border-border shadow-lg transition-transform duration-300 ${
+      isMobileMenuOpen ? "translate-x-0 bg-white" : "-translate-x-full"
+    }`}
+  >
+    <nav className="px-4 py-6 flex flex-col gap-4 bg-white h-screen">
 
-            <Link
-              href="/doctors"
-              className={`px-4 py-3 rounded-lg transition-colors ${
-                isActive("/doctors")
-                  ? "bg-primary text-primary-foreground font-semibold"
-                  : "hover:bg-muted"
-              }`}
-            >
-              Doctors
-            </Link>
-            
-            <Link
-              href="/what-we-do"
-              className={`px-4 py-3 rounded-lg transition-colors ${
-                isActive("/what-we-do")
-                  ? "bg-primary text-primary-foreground font-semibold"
-                  : "hover:bg-muted"
-              }`}
-            >
-              What we do
-            </Link>
-            
-            <Link
-              href="/missions"
-              className={`px-4 py-3 rounded-lg transition-colors ${
-                isActive("/missions")
-                  ? "bg-primary text-primary-foreground font-semibold"
-                  : "hover:bg-muted"
-              }`}
-            >
-              Missions
-            </Link> 
+      {/* Close Button */}
+      <button
+        onClick={() => setIsMobileMenuOpen(false)}
+        className="mb-4 p-2 rounded-lg hover:bg-muted w-fit"
+      >
+        <X className="h-6 w-6" />
+      </button>
 
-            <Link
-              href="/media"
-              className={`px-4 py-3 rounded-lg transition-colors ${
-                isActive("/media")
-                  ? "bg-primary text-primary-foreground font-semibold"
-                  : "hover:bg-muted"
-              }`}
-            >
-              Media
-            </Link>
+      {/* About - Toggle section */}
+      <div>
+        <button
+          type="button"
+          onClick={() => setIsMobileAboutOpen((s) => !s)}
+          className={`w-full flex items-center justify-between px-4 py-3 rounded-lg transition-colors ${
+            isActive("/about") ? "bg-white text-primary-foreground" : "hover:bg-muted"
+          }`}
+        >
+          <span>About</span>
+          {isMobileAboutOpen ? (
+            <ChevronUp className="w-5 h-5" />
+          ) : (
+            <ChevronDown className="w-5 h-5" />
+          )}
+        </button>
 
-            <Link
-              href="/register"
-              className={`px-4 py-3 rounded-lg transition-colors ${
-                isActive("/register")
-                  ? "bg-primary text-primary-foreground font-semibold"
-                  : "hover:bg-muted"
-              }`}
-            >
-              Register
+        {isMobileAboutOpen && (
+          <div className="mt-2 space-y-1 pl-4">
+            <Link href="/about/mission-vision" className="block px-4 py-2 rounded-lg hover:bg-muted">
+              Mission & Vision
             </Link>
-            
-            <Link href="/register" className="mt-2">
-              <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                Get Started
-              </Button>
+            <Link href="/about/our-story" className="block px-4 py-2 rounded-lg hover:bg-muted">
+              Our Story
             </Link>
-            <Link href="/" className="mt-0">
-              <Button className="w-full bg-gray-200 text-black hover:bg-gray-300/90">
-                Grants
-              </Button>
+            <Link href="/about/leadership" className="block px-4 py-2 rounded-lg hover:bg-muted">
+              Leadership & Governance
             </Link>
-          </nav>
-        </div>
-      )}
+            <Link href="/about/partners" className="block px-4 py-2 rounded-lg hover:bg-muted">
+              Partners
+            </Link>
+          </div>
+        )}
+      </div>
+
+      {/* Other links */}
+      <Link href="/doctors" className="px-4 py-3 rounded-lg hover:bg-muted">
+        Doctors
+      </Link>
+
+      <Link href="/what-we-do" className="px-4 py-3 rounded-lg hover:bg-muted">
+        What we do
+      </Link>
+
+      <Link href="/missions" className="px-4 py-3 rounded-lg hover:bg-muted">
+        Missions
+      </Link>
+
+      <Link href="/media" className="px-4 py-3 rounded-lg hover:bg-muted">
+        Media
+      </Link>
+
+      <Link href="/register" className="px-4 py-3 rounded-lg hover:bg-muted">
+        Register
+      </Link>
+
+      <Link href="/register" className="mt-2">
+        <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+          Get Started
+        </Button>
+      </Link>
+      <Link href="/">
+        <Button className="w-full bg-gray-200 text-black hover:bg-gray-300/90">
+          Grants
+        </Button>
+      </Link>
+    </nav>
+  </div>
+
+  {/* Click outside to close */}
+  <div
+    className="w-full h-full"
+    onClick={() => setIsMobileMenuOpen(false)}
+  />
+</div>
+
+  </div>
+)}
     </header>
   );
 }
