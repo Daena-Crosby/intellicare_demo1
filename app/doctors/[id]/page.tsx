@@ -119,7 +119,7 @@ export default async function DoctorDetailPage({
           {/* Left Sidebar - Photo & Basic Info */}
           <div className="space-y-6">
             {/* Profile Photo Card */}
-            <Card className="overflow-hidden border-slate-700 bg-primary shadow-lg backdrop-blur">
+            <Card className="overflow-hidden border-slate-700 bg-white shadow-lg backdrop-blur">
               <CardContent className="p-6">
                 <div className="grid grid-cols-1 gap-4 mb-6">
                   {/* 1st Profile Photo Card */}
@@ -128,15 +128,15 @@ export default async function DoctorDetailPage({
                     alt={doctor.name}
                     width={400}
                     height={400}
-                    className="h-80 w-80 rounded-full object-cover shadow-xl border-4 border-white"
+                    className="h-80 w-80 rounded-full object-cover shadow-xl border-4 border-primary"
                   />
                 </div>
                 <div className="space-y-4">
                   <div>
-                    <h1 className="mb-2 text-3xl font-bold text-white">
+                    <h1 className="mb-2 text-3xl font-bold text-black">
                       {doctor.name}
                     </h1>
-                    <p className="text-lg text-slate-300">{doctor.specialty}</p>
+                    <p className="text-lg text-slate-700">{doctor.specialty}</p>
                   </div>
                 </div>
 
@@ -146,35 +146,35 @@ export default async function DoctorDetailPage({
                   </h3>
                   <div className="space-y-3 text-sm">
                     <div className="flex items-start gap-3">
-                      <Calendar className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
+                      <Calendar className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
                       <div>
                         <div className="text-slate-500">Experience</div>
-                        <div className="text-slate-200">
+                        <div className="text-primary">
                           {doctor.experience_years} years
                         </div>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
+                      <MapPin className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
                       <div>
                         <div className="text-slate-500">Location</div>
-                        <div className="text-slate-200">{doctor.country}</div>
+                        <div className="text-primary">{doctor.country}</div>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Award className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
+                      <Award className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
                       <div>
                         <div className="text-slate-500">Specialty</div>
-                        <div className="text-slate-200">
+                        <div className="text-primary">
                           {doctor.medical_role}
                         </div>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
-                      <Languages className="mt-0.5 h-4 w-4 flex-shrink-0 text-blue-200" />
+                      <Languages className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" />
                       <div>
                         <div className="text-slate-500">Languages</div>
-                        <div className="text-slate-200">
+                        <div className="text-primary">
                           {profile?.languages
                             ? profile.languages.join(", ")
                             : "Not specified"}
@@ -219,13 +219,13 @@ export default async function DoctorDetailPage({
 
             {/* Personality Card */}
             {profile?.personality && (
-              <Card className="border-slate-700 bg-primary shadow-lg backdrop-blur">
+              <Card className="border-slate-700 bg-white shadow-lg backdrop-blur">
                 <CardContent className="p-6">
                   <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-black">
-                    <Zap className="h-5 w-5 text-white" />
+                    <Zap className="h-5 w-5 text-primary" />
                     Personality
                   </h2>
-                  <p className="text-pretty text-sm leading-relaxed text-white">
+                  <p className="text-pretty text-sm leading-relaxed text-primary">
                     {profile.personality}
                   </p>
                 </CardContent>
@@ -252,13 +252,13 @@ export default async function DoctorDetailPage({
           <div className="space-y-6">
             <div className="hidden lg:block">
               {profile?.bio && (
-                <Card className="border-slate-700 bg-primary shadow-lg backdrop-blur">
+                <Card className="border-slate-700 bg-white shadow-lg backdrop-blur">
                   <CardContent className="p-6">
                     <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-black">
-                      <User className="h-6 w-6 text-blue-200" />
+                      <User className="h-6 w-6 text-primary" />
                       Bio
                     </h2>
-                    <p className="text-pretty text-base leading-relaxed text-slate-300">
+                    <p className="text-pretty text-base leading-relaxed text-primary">
                       {profile.bio}
                     </p>
                   </CardContent>
@@ -304,94 +304,6 @@ export default async function DoctorDetailPage({
                 })()}
             </div>
 
-            {/* Motivation */}
-            {/* <div className="grid gap-6 ">
-              <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
-                <CardContent className="p-6">
-                  <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-white">
-                    <Sparkles className="h-5 w-5 text-blue-200" />
-                    Motivations
-                  </h2>
-                  <div className="space-y-3">
-                    <div className="space-y-1.5">
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-white">Patient Care</span>
-                        <span className="font-medium text-white">10/10</span>
-                      </div>
-                      <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                        <div
-                          className="h-full rounded-full bg-primary transition-all duration-300"
-                          style={{ width: "100%" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="space-y-1.5">
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-white">Global Health</span>
-                        <span className="font-medium text-white">9/10</span>
-                      </div>
-                      <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                        <div
-                          className="h-full rounded-full bg-primary transition-all duration-300"
-                          style={{ width: "90%" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="space-y-1.5">
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-white">Longevity</span>
-                        <span className="font-medium text-white">9/10</span>
-                      </div>
-                      <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                        <div
-                          className="h-full rounded-full bg-primary transition-all duration-300"
-                          style={{ width: "90%" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="space-y-1.5">
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-white">Preventative</span>
-                        <span className="font-medium text-white">10/10</span>
-                      </div>
-                      <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                        <div
-                          className="h-full rounded-full bg-primary transition-all duration-300"
-                          style={{ width: "100%" }}
-                        />
-                      </div>
-                    </div>
-                    <div className="space-y-1.5">
-                      <div className="flex items-center justify-between text-xs">
-                        <span className="text-white">Balance</span>
-                        <span className="font-medium text-white">8/10</span>
-                      </div>
-                      <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                        <div
-                          className="h-full rounded-full bg-primary transition-all duration-300"
-                          style={{ width: "80%" }}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {profile?.strengths && (
-                <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur">
-                  <CardContent className="p-6">
-                    <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-white">
-                      <Award className="h-5 w-5 text-blue-200" />
-                      Strengths
-                    </h2>
-                    <p className="text-pretty text-sm leading-relaxed text-slate-300">
-                      {profile.strengths}
-                    </p>
-                  </CardContent>
-                </Card>
-              )}
-            </div> */}
-
             {profile?.education && (
               <Card className="border-slate-700 bg-white shadow-lg backdrop-blur lg:col-span-2">
                 <CardContent className="p-6">
@@ -418,80 +330,18 @@ export default async function DoctorDetailPage({
 
             {/* Professional Journey */}
             {profile?.professional_experience && (
-              <Card className="border-slate-700 bg-primary shadow-lg backdrop-blur">
+              <Card className="border-slate-700 bg-white shadow-lg backdrop-blur">
                 <CardContent className="p-6">
                   <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-black">
-                    <Briefcase className="h-6 w-6 text-white" />
+                    <Briefcase className="h-6 w-6 text-primary" />
                     Professional Journey
                   </h2>
-                  <p className="text-pretty text-base leading-relaxed text-white">
+                  <p className="text-pretty text-base leading-relaxed text-primary">
                     {profile.professional_experience}
                   </p>
                 </CardContent>
               </Card>
             )}
-
-            {/* 2nd Profile Photo Card */}
-            <div className="flex w-full gap-4 lg:grid-cols-3">
-              {/* {doctor.name === "Dr. Ilya Rabkin" && (
-                <Image
-                  src="/ilya-second-photo.jpg"
-                  alt={`${doctor.name} - Professional Photo`}
-                  width={400}
-                  height={400}
-                  className=" h-70 w-80 rounded-lg object-cover shadow-xl"
-                />
-              )} */}
-
-              {/* {profile?.professional_experience && (
-                <Card className="border-slate-700 bg-slate-800/50 shadow-lg backdrop-blur lg:col-span-2 w-full">
-                  <CardContent className="p-6 w-auto">
-                    <h2 className="mb-4 flex items-center gap-2 text-xl font-bold text-white">
-                      <Lightbulb className="h-5 w-5 text-blue-200" />
-                      Technology & Innovation
-                    </h2>
-                    <div className="space-y-3 w-auto">
-                      <div className="space-y-1.5">
-                        <div className="flex items-center justify-between text-xs">
-                          <span className="text-white">Telemedicine</span>
-                          <span className="font-medium text-white">9/10</span>
-                        </div>
-                        <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                          <div
-                            className="h-full rounded-full bg-primary"
-                            style={{ width: "90%" }}
-                          />
-                        </div>
-                      </div>
-                      <div className="space-y-1.5">
-                        <div className="flex items-center justify-between text-xs">
-                          <span className="text-white">AI Integration</span>
-                          <span className="font-medium text-white">8/10</span>
-                        </div>
-                        <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                          <div
-                            className="h-full rounded-full bg-primary"
-                            style={{ width: "80%" }}
-                          />
-                        </div>
-                      </div>
-                      <div className="space-y-1.5">
-                        <div className="flex items-center justify-between text-xs">
-                          <span className="text-white">Digital Health</span>
-                          <span className="font-medium text-white">9/10</span>
-                        </div>
-                        <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                          <div
-                            className="h-full rounded-full bg-primary"
-                            style={{ width: "90%" }}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              )} */}
-            </div>
 
             {/* Personal Story */}
             {profile?.personal_story && (
@@ -510,13 +360,13 @@ export default async function DoctorDetailPage({
 
             {/* Memorable Case */}
             {profile?.memorable_case && (
-              <Card className="border-slate-700 bg-primary shadow-lg backdrop-blur">
+              <Card className="border-slate-700 bg-white shadow-lg backdrop-blur">
                 <CardContent className="p-6">
                   <h2 className="mb-4 flex items-center gap-2 text-2xl font-bold text-black">
-                    <Heart className="h-6 w-6 text-white" />
+                    <Heart className="h-6 w-6 text-primary" />
                     Memorable Experience
                   </h2>
-                  <p className="text-pretty text-base leading-relaxed text-white">
+                  <p className="text-pretty text-base leading-relaxed text-primary">
                     {profile.memorable_case}
                   </p>
                 </CardContent>
