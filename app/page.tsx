@@ -144,20 +144,15 @@ export default function Home() {
           </div>
 
           <div className="max-w-5xl mx-auto text-center relative z-40">
-            <h1 className="text-5xl font-bold text-primary-foreground mb-6 text-start md:text-center md:text-6xl">
+            <h1 className="text-5xl font-bold text-primary-foreground mb-6 text-center md:text-6xl">
               Care. Relief. Revitalization
             </h1>
-            <h2 className="text-[26px] font-semibold text-primary-foreground mb-6 text-start md:text-center md:text-4xl">
+            <h2 className="text-[26px] font-semibold text-primary-foreground mb-6 text-center md:text-4xl">
               Beginning with Jamaica.
             </h2>
-            <p className="text-xl text-primary-foreground/90 mb-4 text-balance leading-relaxed text-start md:text-center">
-              A global care model built on rapid medical missions, telemedicine,
-              community revitalization, and preventative health starting with
-              the people and communities rebuilding after Hurricane Melissa.
-            </p>
-            <p className="text-lg text-primary-foreground/80 mb-8 text-balance text-start md:text-center">
-              Our first major focus is Jamaica, coordinating medical and
-              psycho-social relief in the wake of recent hurricanes.
+            <p className="text-xl text-primary-foreground/90 mb-4 text-balance leading-relaxed text-center">
+              A global care movement delivering rapid medical missions, telemedicine, and community support—starting with the people rebuilding after Hurricane Melissa.
+              Our first focus is Jamaica, providing coordinated medical and psychosocial relief where it’s needed most.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Link href="/register" onClick={scrollToTop}>
@@ -370,7 +365,299 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ... rest of your content unchanged ... */}
+        {/*  */}
+        <section className="py-16 px-4 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-center">
+                Previous Medical Missions
+              </h2>
+              <p className="text-center text-foreground/70 mb-12 max-w-2xl mx-auto">
+                Our track record of providing critical healthcare support during
+                times of crisis and community need.
+              </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full">
+              {/* Card 1 */}
+              <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer w-full">
+                <a href="https://www.intellibus.care/missions/melissa-recovery">
+                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/field-care.jpg"
+                      alt="Hurricane relief field work"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <h3 className="font-semibold mb-2">Melissa Recovery Across Jamaica</h3>
+                  <h4 className="font-light text-[14px] mb-2">Supporting communities across parishes</h4>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Mapping medical needs across parishes
+                  </p>
+                  <p className="text-sm text-foreground/70 flex gap-2"> 
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Deploying Starlink-powered telehealth terminals
+                  </p>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Distributing diagnostic kits for leptospirosis and cholera
+                  </p>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Coordinating with ODPEM, MLSS, and community partners
+                  </p>
+                </a>
+              </Card>
+
+              {/* Card 2 - Updated */}
+              <Card className="p-6 border border-border overflow-hidden group hover:shadow-lg transition-shadow cursor-pointer w-full">
+                <a href="https://www.intellibus.care/missions/bluefields-mernsville">
+                  <div className="aspect-video bg-muted rounded-lg mb-4 flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/team-meeting.jpg"
+                      alt="Bluefields & Mernsville telemedicine and relief"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <h3 className="font-semibold mb-2">Bluefields & Mernsville</h3>
+                  <h4 className="font-light text-[14px] mb-2">Restoring care access after Hurricane Melissa</h4>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Building telemedicine nodes, diagnostic clinics, and community pods
+                  </p>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Running medical missions with JDF, BDF, UWI, and international doctors
+                  </p>
+                  <p className="text-sm text-foreground/70 flex gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                    Supporting small businesses and youth talent programs
+                  </p>
+                </a>
+              </Card>
+            </div>
+             <p className="text-center text-muted-foreground mt-8 italic">
+              More mission details and impact stories coming soon.
+            </p>
+          </div>
+        </section>
+
+        {/* About/Charter Section */}
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold mb-12 text-center">
+              About Intellibus Care Foundation
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="space-y-3 text-center">
+                <h3 className="text-lg font-semibold text-primary">
+                  Our Purpose
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  We exist to provide care, relief, and revitalization in places
+                  where shocks such as natural disasters, economic disruption,
+                  or systemic gaps leave people without adequate support. We do
+                  this through direct services, grantmaking, and partnerships
+                  that strengthen local capacity rather than replace it.
+                </p>
+              </div>
+              <div className="space-y-3 text-center">
+                <h3 className="text-lg font-semibold text-primary">
+                  Legal & Governance
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Intellibus Care Foundation is an independent nonprofit
+                  foundation established by Intellibus and aligned with the
+                  World Digital Governance (WDG) mission. The foundation is
+                  overseen by an independent board and program directors who
+                  ensure that funding, programs, and technology are used
+                  ethically, transparently, and in the best interests of the
+                  communities we serve
+                </p>
+              </div>
+              <div className="space-y-3 text-center">
+                <h3 className="text-lg font-semibold text-primary">
+                  Technology Backbone
+                </h3>
+                <p className="text-foreground/80 leading-relaxed">
+                  Our programs are powered by Atlas Mesh and the DigitalJamaica
+                  grant ledger, enabling transparent tracking of resources,
+                  needs, and impact. This infrastructure helps us match
+                  volunteers and medical professionals with real-time needs on
+                  the ground and ensures that every intervention can be measured
+                  and continuously improved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                {/* Three Core Areas Section */}
+        <section className="h-screen flex items-center px-4 bg-gradient-to-br from-primary via-primary/95 to-blue-600">
+          <div className="max-w-7xl mx-auto w-full h-full py-8 flex flex-col">
+            <div className="mb-6">
+              <h3 className="text-4xl font-bold text-primary-foreground mb-3">
+                Three Core Areas
+              </h3>
+              <p className="text-lg text-primary-foreground/90 leading-relaxed max-w-2xl">
+                Our mission is built on three interconnected pillars that work
+                together to create lasting positive change
+              </p>
+            </div>
+            <div className="flex-1 min-h-0">
+              <VerticalValuesScroll values={coreValues} />
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center">
+              What We Support
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {focusAreas.map((area, idx) => {
+                const Icon = area.icon;
+                return (
+                  <Card
+                    key={idx}
+                    className="p-6 bg-card hover:shadow-lg transition-shadow border border-border"
+                  >
+                    <div className="flex items-start gap-4">
+                      <Icon className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+                      <div className="flex-1">
+                        <h3 className="text-base font-semibold mb-1">
+                          {area.title}
+                        </h3>
+                        <p className="text-sm text-foreground/70">
+                          {area.description}
+                        </p>
+                      </div>
+                    </div>
+                  </Card>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 px-4 bg-gray-50">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-4xl font-bold mb-8 text-center">
+              Doctor's Journey with Us
+            </h2>
+            <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+              From registration to impact: A clear path to making a difference
+            </p>
+
+            <div className="grid md:grid-cols-5 gap-6">
+              {journeySteps.map((step, index) => {
+                const Icon = step.icon;
+                return (
+                  <div key={index} className="text-center space-y-4">
+                    <div className="flex justify-center">
+                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Icon className="w-8 h-8 text-primary" />
+                      </div>
+                    </div>
+                    <div className="text-2xl font-bold text-primary/40">
+                      {step.number}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground mb-2">
+                        {step.title}
+                      </p>
+                      <p className="text-sm text-muted-foreground">
+                        {step.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="text-center mt-10">
+              <Link href="/register" onClick={scrollToTop}>
+                <Button
+                  size="lg"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 cursor-pointer"
+                >
+                  Start Your Journey
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+                {/* Telemedicine Innovation Section */}
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-foreground mb-4">
+                Technology-Enabled Healthcare
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Bridging distances through telemedicine and collaborative care
+                platforms to ensure no community is left behind.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src="/telemedicine-1.png"
+                    alt="Virtual consultation"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">
+                    Virtual Consultations
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Connecting patients with healthcare professionals through
+                    secure video platforms for real-time medical guidance.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src="/team-meeting.png"
+                    alt="Team collaboration"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">
+                    Global Collaboration
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Multi-disciplinary teams working together across borders to
+                    provide comprehensive care solutions.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <div className="relative h-56 overflow-hidden">
+                  <img
+                    src="/telemedicine-2.png"
+                    alt="Remote care coordination"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">24/7 Support</h3>
+                  <p className="text-muted-foreground">
+                    Round-the-clock access to medical professionals ensuring
+                    continuous care and emergency response capabilities.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
 
         {/* CTA Section */}
         <section className="py-20 px-4 bg-gradient-to-br from-primary via-primary/95 to-blue-600 text-primary-foreground">

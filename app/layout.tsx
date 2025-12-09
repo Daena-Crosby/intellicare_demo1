@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: "Intellibus Care Foundation - Telemedicine Volunteers",
   description:
     "Join our global network of healthcare professionals providing telemedicine and field work to underserved communities.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
